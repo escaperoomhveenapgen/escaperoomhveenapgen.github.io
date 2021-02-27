@@ -1,8 +1,13 @@
+html { 
+  background: url(images/Background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-        background-image: url("images/Background.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment:fixed;
+        margin=100%
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';

@@ -26,6 +26,30 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.myButton {
+	background-color:#ffffff;
+	-webkit-border-radius:42px;
+	-moz-border-radius:42px;
+	border-radius:42px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-style:italic;
+	padding:8px 19px;
+	text-decoration:none;
+	&:hover {
+	background-color:#ffffff;
+}
+ &:active {
+	position:relative;
+	top:1px;
+}
+ }
+    
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';

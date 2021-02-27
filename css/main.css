@@ -29,19 +29,22 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    color: #F8F8FF;
+    text-align: center;
 }
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #F8F8FF;
+    text-align: center;
 }
 
 div {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
   width: 80%;
-  padding: 20px;
+  padding: 10px;
   margin: auto;
-}
+  }
 
 footer {
     border-top: 1px solid #d5d5d5;

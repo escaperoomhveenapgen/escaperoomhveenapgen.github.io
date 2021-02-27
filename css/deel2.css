@@ -3,12 +3,6 @@ body{
   color: black;
 }
 
-h1{ 
-  color: black;
-  text-align: center; 
-  font-size: 36px;
-  font-family: Georgia;
-}
 
 .header{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/"oldpaper.jpg");
@@ -17,6 +11,10 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+    color: black;
+    text-align: center;
+    font-size: 36px;
+    font-family: Georgia;
 }
 
 

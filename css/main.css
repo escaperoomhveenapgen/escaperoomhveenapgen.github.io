@@ -1,5 +1,5 @@
 html { 
-  background: url(../images/deephole_2.jpg) no-repeat center center fixed; 
+  background: url(../images/watch.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,6 +35,14 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+
+div {
+  background-color: black;
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;

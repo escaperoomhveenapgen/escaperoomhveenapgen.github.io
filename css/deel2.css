@@ -81,3 +81,8 @@ p{
   background-color: #ccc;
   color: #ccc;
 }
+.letter{
+  margin:auto;
+  width: 500px;
+    padding: 2px;
+}

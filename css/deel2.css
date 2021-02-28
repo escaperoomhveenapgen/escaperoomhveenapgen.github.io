@@ -14,6 +14,11 @@ body{
   padding: 80px;
   }
   
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   h1{
   color: black;
     text-align: center;
@@ -80,9 +85,7 @@ p{
   padding: 3px;
   background-color: #ccc;
   color: #ccc;
-   position: fixed;
-  left: 0;
-  bottom: 0;
+  margin-top:20px; 
 }
 .letter{
   width: 500px;

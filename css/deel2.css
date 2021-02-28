@@ -80,6 +80,9 @@ p{
   padding: 3px;
   background-color: #ccc;
   color: #ccc;
+   position: fixed;
+  left: 0;
+  bottom: 0;
 }
 .letter{
   margin:auto;

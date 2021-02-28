@@ -8,25 +8,26 @@
           <h1> Welkom op de blog van de 18+ kring </h1>
          </div>
          
+         <script>
          function unhide() {
     var hid = document.getElementsByClassName("exp");
     // Emulates jQuery $(element).is(':hidden');
     if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";
     }
-}
-         
+}       
+         </script>
         </head>
 
         <body>
-         <div class= "rightcolumn">
+         <div class=rightcolumn>
           <h2> Wat doen wij nu tijdens de coronacrisis? </h2>
           <p> Door de coronacrisis kunnen we nu niet bij elkaar komen. Om elkaar en misschien ook andere mensen te laten weten hoe het met ons gaat,
           kunnen we even een verhaal plaatsen over wat wij zoal doen op een dag of in een week? Voor de verhalen kun je op de foto's klikken van de desbetreffende personen.</p>
          </div>
          
-         <div class="leftcolumn"> 
-          <div class="card">
+         <div class=leftcolumn> 
+          <div class=card>
            <p> Heeft u een hint nodig? Klik dan op de onderstaande knop </p>
            <button onclick="unhide()">Hint</button>
            <div class="exp">

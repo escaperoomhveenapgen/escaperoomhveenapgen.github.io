@@ -29,7 +29,7 @@ body{
 }
 
 .article {
-  float: left;
+  float: right;
   padding: 20px;
   width: 30%;
   background-color: #f1f1f1;

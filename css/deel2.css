@@ -57,3 +57,13 @@ h2{
   height: 50px;
   width:100%;
 }
+
+p{
+  font-family: Georgia;
+}
+
+.images {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}

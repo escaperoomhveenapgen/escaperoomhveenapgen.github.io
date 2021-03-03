@@ -41,7 +41,6 @@ a:hover {
 	font-style:italic;
 	padding:8px 19px;
 	text-decoration:none;
-	margin: auto;
 	&:hover {
 	background-color:#ffffff;
 }

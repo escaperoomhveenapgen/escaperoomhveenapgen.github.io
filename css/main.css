@@ -41,7 +41,6 @@ a:hover {
 	font-style:italic;
 	padding:8px 19px;
 	text-decoration:none;
-	margin-top: 75%;
 	&:hover {
 	background-color:#ffffff;
 }
@@ -54,7 +53,7 @@ a:hover {
 .center {
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);

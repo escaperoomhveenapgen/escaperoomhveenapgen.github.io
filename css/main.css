@@ -41,7 +41,7 @@ a:hover {
 	font-style:italic;
 	padding:8px 19px;
 	text-decoration:none;
-	vertical-align: middle;
+	top: 75%;
 	&:hover {
 	background-color:#ffffff;
 }

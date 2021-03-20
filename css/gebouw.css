@@ -9,6 +9,7 @@
 }
 
 .anchor-ingang {
+  border: 1px solid red;
   height: 44%;
   width: 17%;
   position: absolute;

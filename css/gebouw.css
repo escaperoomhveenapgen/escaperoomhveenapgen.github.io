@@ -1,18 +1,7 @@
-.wrapper {
-  width: 100%;
-  max-width: 1920; /*actual width of image-- behaves strangely if exceeding this*/
+.image{
   position: relative;
 }
-
-.wrapper img {
-  max-width: 100%;
-}
-
-.anchor-ingang {
-  border: 1px solid red;
-  height: 44%;
-  width: 17%;
+.image a{
+  display: block;      
   position: absolute;
-  left: 39.75%;
-  top: 50%;
 }

@@ -105,6 +105,13 @@
   margin-right: 3%;
 }
 
+.formulier{
+  position:absolute;
+   left:50px;
+   top: 50px;
+   width: 800px;
+} 
+
 .link-button-wrapper {
     width: 200px;
     height: 40px;

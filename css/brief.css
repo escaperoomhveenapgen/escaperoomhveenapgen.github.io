@@ -21,7 +21,7 @@
   margin: auto;
 vertical-align: middle;
     color: #f7f8f8;
-    font-size: 12px;
+    font-size: 16px;
     font-family: cabinregular;
     text-align: center;	
 	padding: 20px 0px 20px 0px;
@@ -32,12 +32,14 @@ div.center{
 	margin: auto 0;
 }
 
+div.center.h1{
+	color: white;
+}
+
 body{
 	background: url('/images/gang_2.jpg');
 	no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-size: 100%;
+	  
 }
 	

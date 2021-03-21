@@ -4,19 +4,26 @@
     margin-left: auto;
     margin-right: auto;
 	width:50%;
+	top: 50px
 }
 
 .buttonimg{
-  background-color:#2dabf9;
-	border-radius:16px;
+  background-color:blue;
+	border-radius:4px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Verdana;
-	font-size:13px;
+	font-size:12px;
 	font-style:italic;
 	padding:12px 26px;
 	text-decoration:none;
-	margin:auto 0;
+	margin:auto;
+}
+
+.h1{
+	text-align:center;
+	font-size: 20px;
+	font-family: Verdana;
 }
 

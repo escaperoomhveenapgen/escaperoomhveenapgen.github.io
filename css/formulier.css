@@ -14,8 +14,7 @@
   display: block;
   width: 100%;
   padding: 0;
-  margin: 0;
-  -webkit-appearance: none;
+    -webkit-appearance: none;
   -moz-appearance: none;
 }
 #fs-frm label,
@@ -108,7 +107,6 @@
 
 .formulier{
   top:200px;
-  margin: auto 0; 
 } 
 
 .label{

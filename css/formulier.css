@@ -115,6 +115,11 @@
   white-space: pre-line;
 }
 
+pre{
+    display: block;
+  white-space: pre;
+  margin: 1em 0;
+}
 .link-button-wrapper {
     width: 400px;
     height: 40px;

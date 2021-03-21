@@ -5,9 +5,10 @@
 }
 
 .letter { 
-  width: 414px;
-	height: 585px;
-	margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .buttonimg{

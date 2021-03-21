@@ -108,14 +108,11 @@
 
 .formulier{
   top:200px;
+  width= 75%;
 } 
 
-.h1{
-  text-align: center;
-}
-
 .label{
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
 .link-button-wrapper {

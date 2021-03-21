@@ -110,6 +110,10 @@
   top:200px;
 } 
 
+.h1{
+  text-align: center;
+}
+
 .label{
   white-space: pre-wrap;
 }
@@ -141,4 +145,24 @@
     font-size: 12px;
     font-family: cabinregular;
     text-align: center;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
 }

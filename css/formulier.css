@@ -163,3 +163,5 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0.3;
+}

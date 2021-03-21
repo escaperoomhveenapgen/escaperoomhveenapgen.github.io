@@ -24,7 +24,7 @@ vertical-align: middle;
     font-size: 12px;
     font-family: cabinregular;
     text-align: center;	
-	padding: 10px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
 }
 
 div.center{
@@ -34,6 +34,10 @@ div.center{
 
 body{
 	background: url('/images/gang_2.jpg');
-	width:100%;
+	no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 	

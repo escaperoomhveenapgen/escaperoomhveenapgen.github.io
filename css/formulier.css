@@ -110,7 +110,7 @@
 } 
 
 .label{
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 .link-button-wrapper {

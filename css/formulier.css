@@ -147,3 +147,7 @@
     text-align: center;
 }
 
+div.center{
+  text-align:center;
+  margin:auto;
+}

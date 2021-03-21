@@ -21,9 +21,8 @@
 	margin:auto;
 }
 
-.h1{
+.center{
 	text-align:center;
-	font-size: 20px;
-	font-family: Verdana;
+	margin: auto 0;
 }
 

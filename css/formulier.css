@@ -1,3 +1,4 @@
+/* reset */
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
@@ -10,7 +11,7 @@
   color: inherit;
   border: none;
   border-radius: 0;
-  display: inline-block;
+  display: block;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -23,7 +24,7 @@
   font-size: .825rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
-  display: inline-block;
+  display: flex;
   align-items: baseline;
 }
 
@@ -106,16 +107,12 @@
 }
 
 .formulier{
-  top: 150px;
-   left: 100px;
-  right: 100px;
-  text-align: left;
+  top:200px;
+  margin: auto 0; 
 } 
 
 .label{
-  white-space: pre-line;
-  text-align: left;
-  display: inline-block;
+  white-space: pre;
 }
 
 .link-button-wrapper {

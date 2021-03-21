@@ -1,0 +1,22 @@
+.body {
+  background-image: url("/images/gang_2.jpg");
+}
+
+.letter { 
+  position: absolute; 
+  width: 50%;
+}
+
+.buttonimg{
+  background-color:#2dabf9;
+	border-radius:16px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:13px;
+	font-style:italic;
+	padding:12px 26px;
+	text-decoration:none;
+}
+

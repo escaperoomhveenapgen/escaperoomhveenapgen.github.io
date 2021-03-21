@@ -8,17 +8,20 @@
 }
 
 .buttonimg{
-  background-color:blue;
-	border-radius:4px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Verdana;
-	font-size:12px;
-	font-style:italic;
-	padding:12px 26px;
-	text-decoration:none;
-	margin:auto;
+  width: 400px;
+    height: 40px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    border-radius: 4px;
+    background-color: #097BC0;
+    box-shadow: 0px 2px 4px gray;
+    display: block;
+    border:1px solid #094BC0;
+  margin: auto;
+vertical-align: middle;
+    color: #f7f8f8;
+    font-size: 12px;
+    font-family: cabinregular;
+    text-align: center;	
 }
 
 div.center{

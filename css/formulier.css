@@ -7,7 +7,7 @@
 #fs-frm label,
 #fs-frm #card-element:disabled {
   font-family: inherit;
-  font-size: 36px;
+  font-size: 100%;
   color: inherit;
   border: none;
   border-radius: 0;
@@ -21,7 +21,7 @@
 #fs-frm label,
 #fs-frm legend,
 #fs-frm ::placeholder {
-  font-size: .825rem;
+  font-size: 1.25rem;
   margin-bottom: .5rem;
   padding-top: .2rem;
   display: flex;

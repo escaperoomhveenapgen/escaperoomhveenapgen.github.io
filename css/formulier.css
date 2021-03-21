@@ -106,8 +106,7 @@
 }
 
 .formulier{
-  position:absolute;
-     top: 150px;
+  top: 150px;
    left: 100px;
   right: 100px;
   text-align: left;
@@ -116,6 +115,7 @@
 .label{
   white-space: pre-line;
   text-align: left;
+  display: block;
 }
 
 .link-button-wrapper {

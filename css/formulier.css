@@ -107,9 +107,9 @@
 
 .formulier{
   position:absolute;
-   left:50px;
-   top: 50px;
+     top: 150px;
    width: 800px;
+  margin:auto;
 } 
 
 .label{

@@ -21,7 +21,7 @@
   margin: auto;
 vertical-align: middle;
     color: #f7f8f8;
-    font-size: 22px;
+    font-size: 18px;
     font-family: Verdana;
     text-align: center;
 }
@@ -29,16 +29,18 @@ vertical-align: middle;
 div.center{
 	text-align:center;
 	margin: auto 0;
-}
-
-div.center.h1{
 	color: white;
 }
 
+
+
 body{
 	background: url('/images/gang_2.jpg');
-	no-repeat center center fixed; 
-  background-size: 100%;
-	  
+		   background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 	

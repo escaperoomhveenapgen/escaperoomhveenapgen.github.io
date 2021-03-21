@@ -145,7 +145,7 @@ pre{
     display: table-cell;
     vertical-align: middle;
     color: #f7f8f8;
-    font-size: 12px;
+    font-size: 18px;
     font-family: cabinregular;
     text-align: center;
 }
@@ -154,3 +154,12 @@ div.center{
   text-align:center;
   margin:auto;
 }
+
+body{
+  background-image: url('/images/formback.jpg'); 
+    background-color: #cccccc;
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;

@@ -1,10 +1,10 @@
 .body {
-  background-image: url("/images/gang_2.jpg");
+  background-image: url('/images/gang_2.jpg');
 }
 
 .letter { 
   position: absolute; 
-  width: 50%;
+  width: 500px;
 }
 
 .buttonimg{

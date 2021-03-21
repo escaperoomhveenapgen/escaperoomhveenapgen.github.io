@@ -108,12 +108,13 @@
 .formulier{
   position:absolute;
      top: 150px;
-   width: 800px;
-  margin:auto;
+   left: 100px;
+  right: 100px;
 } 
 
 .label{
-  white-space: pre-wrap;
+  white-space: pre-line;
+  text-align: left;
 }
 
 .link-button-wrapper {

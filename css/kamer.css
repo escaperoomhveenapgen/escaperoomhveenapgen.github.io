@@ -1,6 +1,6 @@
 .image{
   position: relative;
-    height=100%;
+   text-align:center;
 }
 .image a{
   display: block;      
@@ -12,3 +12,9 @@
   width: 1280px;
   height: 1024px;
 } 
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

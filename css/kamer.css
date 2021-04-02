@@ -1,0 +1,14 @@
+.image{
+  position: relative;
+    height=100%;
+}
+.image a{
+  display: block;      
+  position: absolute;
+}
+
+.panorama{
+  position: relative;
+  width: 1280px;
+  height: 1024px;
+} 

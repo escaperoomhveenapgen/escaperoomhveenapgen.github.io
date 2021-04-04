@@ -5,16 +5,8 @@
 
 .image{
   position: relative;
-  
+    width: 100%;
 }
 
 .fullheight{
-  display: flex;
-    }
-
-.img{ 
-  height:500px;
-}
-
-.html { height: 100%; } 
-.body { height: 98%; }
+  height:100%;}

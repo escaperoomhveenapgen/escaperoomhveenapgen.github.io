@@ -15,5 +15,6 @@ position: relative;
 font-size: 0;}
 
 .img{ 
-  height:100vh;}
+  height:100vh;
+object-fit: contain;}
 

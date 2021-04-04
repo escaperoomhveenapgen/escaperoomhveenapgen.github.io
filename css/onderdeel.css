@@ -9,14 +9,12 @@
 }
 
 .fullheight{
-  height: 100vh;
-width: auto;
-position: relative;
-font-size: 0;
-object-fit: contain;}
+  display: flex;
+    flex-direction: column;}
 
 .img{ 
-  height:100vh;
-object-fit: contain;}
+  height:100%;
+}
 
-html { height: 100%; } body { height: 98%; }
+.html { height: 100%; } 
+.body { height: 98%; }

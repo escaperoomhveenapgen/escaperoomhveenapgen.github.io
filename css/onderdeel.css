@@ -1,0 +1,21 @@
+.image a{
+  display: block;      
+  position: absolute;
+}
+
+.image{
+  position: relative;
+    width: 100%;
+}
+
+.fullheight{
+  height: 100%;
+width: auto;
+position: relative;
+font-size: 0;}
+
+.body{
+  height: 100%;}
+
+.html{
+  height:100%;}

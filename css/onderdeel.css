@@ -19,3 +19,4 @@ object-fit: contain;}
   height:100vh;
 object-fit: contain;}
 
+html { height: 100%; } body { height: 98%; }

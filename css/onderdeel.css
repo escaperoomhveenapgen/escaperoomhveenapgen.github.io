@@ -12,7 +12,8 @@
   height: 100vh;
 width: auto;
 position: relative;
-font-size: 0;}
+font-size: 0;
+object-fit: contain;}
 
 .img{ 
   height:100vh;

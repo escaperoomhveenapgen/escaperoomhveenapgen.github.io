@@ -14,7 +14,7 @@ width: auto;
 position: relative;
 font-size: 0;}
 
- body {
+ .body {
       width: 100%;
       height: 100%;
       background-image: url('/images/schilderij.jpg');

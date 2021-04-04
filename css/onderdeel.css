@@ -14,12 +14,3 @@ width: auto;
 position: relative;
 font-size: 0;}
 
- .body {
-      width: 100%;
-      height: 100%;
-      background-image: url('/images/schilderij.jpg');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      background-attachment: fixed;
-    }

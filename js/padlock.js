@@ -6,7 +6,7 @@ const unlockButton = document.getElementById('unlock-button');
 const responseText = document.getElementById('response-text');
 
 const inputWidth = 60;
-let comboArray = [7,0,2,5];
+let comboArray = [6,3,7,5];
 
 let lockRestingColor;
 
@@ -36,8 +36,7 @@ unlockButton.onclick = () => {
 		startUnlockAttempt(() => {
 			const tl = new TimelineMax({ onComplete: finishUnlockAttempt });
 			lockRestingColor = 'hsl(120,50%,100%)';
-			responseText.innerHTML = 'Goed';
-	window.open("https://escaperoomhveenapgen.github.io/links/kast2.html" , target="_parent");
+			responseText.innerHTML = 'correct';
 			
 			tl.to('#box', 0, { fill: lockRestingColor });
 			tl.to('#bar', 0, { stroke: lockRestingColor });

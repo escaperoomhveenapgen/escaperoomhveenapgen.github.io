@@ -36,8 +36,8 @@ unlockButton.onclick = () => {
 		startUnlockAttempt(() => {
 			const tl = new TimelineMax({ onComplete: finishUnlockAttempt });
 			lockRestingColor = 'hsl(120,50%,100%)';
-			responseText.innerHTML = 'correct';
-			window.open('https://www.codexworld.com', '_parent');
+			responseText.innerHTML = 'Goed';
+	window.open("https://escaperoomhveenapgen.github.io/links/kast2.html" , target="_parent");
 			
 			tl.to('#box', 0, { fill: lockRestingColor });
 			tl.to('#bar', 0, { stroke: lockRestingColor });
@@ -50,7 +50,7 @@ unlockButton.onclick = () => {
 		startUnlockAttempt(() => {
 			const tl = new TimelineMax({ onComplete: finishUnlockAttempt });
 			lockRestingColor = 'hsl(0,50%,100%)';
-			responseText.innerHTML = 'Fout';
+			responseText.innerHTML = 'incorrect';
 			
 			tl.to('#box', 0, { fill: lockRestingColor });
 			tl.to('#bar', 0, { stroke: lockRestingColor });

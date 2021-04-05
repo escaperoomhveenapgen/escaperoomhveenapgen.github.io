@@ -99,6 +99,7 @@ function checkLock() {
 	if(combinationLock.locked === false) {
 		document.querySelector('#indicator').classList.remove('locked');
 		document.querySelector('#indicator').classList.add('unlocked');
+		window.open('https://escaperoomhveenapgen.github.io/links/kast2.html', target="_parent");
 	}
 	else {
 		document.querySelector('#indicator').classList.add('locked');

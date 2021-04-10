@@ -10,14 +10,10 @@ function ValidatePassword() {
   var password = prompt("Hoeveel stoelen staan er voor het bord in de jongste jeugd?", "");
 
   if (password == "twee"|| password == "TWEE" || password =="Twee" || password =="2") {
-     alert('Correct');
-    window.location.assign ="https://escaperoomhveenapgen.github.io/links/EHBOruimte.html";
+        window.location ="https://escaperoomhveenapgen.github.io/links/EHBOruimte.html";
      return true;
   }
-  else {
-        alert('Incorrect');
-       window.location="https://escaperoomhveenapgen.github.io/links/EHBO.html";
-   return false;}
+  alert('Dit is fout');return false;
 }
 </script>
             </head>

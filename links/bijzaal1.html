@@ -2,222 +2,130 @@
 <html>
     <head>
         <title>Deur naar de bijzaal</title>
-      <script>
-        //function that display value
-
-            function dis(val)
-
-            {
-
-                document.getElementById("result").value+=val
-
-            }
-
-
-//function that evaluates the digit and return result
-
-            function solve()
-
-            {
-
-                let x = document.getElementById("result").value
-
-                let y = eval(x)
-
-                document.getElementById("result").value = y
-                
-
- 
- if (y== "105"){
-     h = document.getElementById("bottom")
-     h.style.display="block"
- }            
-                
-        else{
-            alert("Incorrect-Password")
-            document.getElementById("result").value = ""
-            
-document.getElementById("a1").style.color="gray"
-document.getElementById("a2").style.color="gray"
-document.getElementById("a3").style.color="gray"
-        }        
-
-            }
-            
-function change(){
-                
- let m = document.getElementById("result").value
- 
- if(m <= 9){
-     n = document.getElementById("a1")
-     n.style.color="red"
- }
- 
- else if ( m <= 99){
-     document.getElementById("a2").style.color="red"
- }
- 
- else  ( m <= 999){
-     document.getElementById("a3").style.color="red"
- }             
-                
-            }
-      </script>
-      
       <style>
-        body {
-    background:#cccc;
-    
+          form {
+  width: 390px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0px 5px 5px -0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
-#top{
-    position:absolute ;
-    top:20%;
-    left:53%;
-    transform:translate(-50%,-50%);
+input[type="password"] {
+  padding: 0 40px;
+  border-radius: 5px;
+  width: 350px;
+  margin: auto;
+  border: 1px solid rgb(228, 220, 220);
+  outline: none;
+  font-size: 60px;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(71, 71, 71);
+  text-align: center;
 }
 
-span{
-    font-weight:bolder;
-    font-size:3em;
-    line-space:2em;
-    color:gray;
-    opacity:0.5;
-    
+input:focus {
+  outline: none;
 }
 
-table{
-    position:absolute ;
-    top:60%;
-    left:52%;
-    transform:translate(-50%,-50%);
-    
+.pinButton {
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  border-radius: 50%;
+  height: 60px;
+  font-weight: 550;
+  width: 60px;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(102, 101, 101);
+  margin: 7px 20px;
 }
 
-td{
-    width:100px;
-    height:70px;
-    text-align:center;
+.clear,
+.enter {
+  font-size: 1em !important;
 }
 
-button{
-   width:50px; 
-   height:50px;
-   background-color:transparent ;
-   font-size:2em;
-   border:none;
-   outline:none;
+.pinButton:hover {
+  box-shadow: #506ce8 0 0 1px 1px;
+}
+.pinButton:active {
+  background: #506ce8;
+  color: #fff;
 }
 
-button:hover{
-    font-size:3em;
+.clear:hover {
+  box-shadow: #ff3c41 0 0 1px 1px;
 }
 
-#bottom{
-    width:100%;
-    height:100%;
-    background:lightgreen;
-    position:absolute ;
-    z-index:1;
-    display:none;
+.clear:active {
+  background: #ff3c41;
+  color: #fff;
 }
 
-p{
-     position:absolute ;
-    top:40%;
-    left:48%;
-    transform:translate(-50%,-50%);
-    font-weight:bold;
-    font-size:1em;
+.enter:hover {
+  box-shadow: #47cf73 0 0 1px 1px;
 }
 
-#bottom>p:nth-child(2){
-    top:45%;
-    
+.enter:active {
+  background: #47cf73;
+  color: #fff;
 }
-
-#bottom>p:nth-child(3){
-    top:55%;
-    
-}
-
-#bottom>p:nth-child(4){
-    top:60%;
-    font-size:0.8em;
-}
-
-a{
-text-decoration:none;
-font-weight:bolder;
-font-size:1em;
-}
-
-tr:nth-child(6){
-    
-    text-align:center;  
-}
-
-tr:nth-child(6)>td:nth-child(2)>button{
-    height:50px;
-    font-size:1.5em;
-    margin-right:20px;
-}
-
-tr:nth-child(5){
-    height:20px;
-}
-      </style>
+        </style>
         
-        
+        <script>
+            $(document).ready(function () {
+
+  const input_value = $("#password");
+
+  //disable input from typing
+  $("#password").keypress(function () {
+    return false;
+  });
+
+  //add password
+  $(".calc").click(function () {
+    let value = $(this).val();
+    field(value);
+  });
+
+  function field(value) {
+    input_value.val(input_value.val() + value);
+  }
+
+  $("#clear").click(function () {
+    input_value.val("");
+  });
+
+  $("#enter").click(function () {
+    alert("Your password " + input_value.val() + " added");
+  });
+  
+});
+        </script>
     </head>
     <body>
-    <div id="top">
-        <span id="a1">.</span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a2">.</span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a3">.</span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a4">.</span>
-    </div>
-    <input type="hidden" maxlength="3" id="result"/>
-        <table border="0">
-            <tr onclick="change()">
-                <td><button onclick="dis('1')">1</button></td>
-                <td><button onclick="dis('2')">2</button></td>
-                <td><button onclick="dis('3')">3</button></td>
-            </tr>
-            <tr onclick="change()">
-                <td><button onclick="dis('4')">4</button></td>
-                <td><button onclick="dis('5')">5</button></td>
-                <td><button onclick="dis('6')">6</button></td>
-            </tr>
-            <tr onclick="change()">
-            <td><button onclick="dis('7')">7</button></td>
-            <td><button onclick="dis('8')">8</button></td>
-            <td><button onclick="dis('9')">9</button></td>
-            </tr>
-            <tr>
-                <td><button></button></td>
-                <td><button onclick="dis('0'); change();">0</button></td>
-                <td><button></button></td>
-            </tr>
-            <tr>
-                
-            </tr>
-            <tr>
-            <td></td>
-            <td><button onclick="solve()">OPEN</button></td>
-            <td></td>
-            </tr>
-        </table>
-        <div id="bottom">
-        <P>CORRECT PASSWORD</P>
-        <P>{DEVICE OPENED}</P>
-        <p> <a href="https://www.coding-greed.blogspot.com">CODING GREED</a></p>
-        <p>click above&uparrow; to visit my website!!</p>
-        
-        </div>
+   <div id="pinpad"> 
+  <form >
+    <input type="password" id="password" /></br>
+    <input type="button" value="1" id="1" class="pinButton calc"/>
+    <input type="button" value="2" id="2" class="pinButton calc"/>
+    <input type="button" value="3" id="3" class="pinButton calc"/><br>
+    <input type="button" value="4" id="4" class="pinButton calc"/>
+    <input type="button" value="5" id="5" class="pinButton calc"/>
+    <input type="button" value="6" id="6" class="pinButton calc"/><br>
+    <input type="button" value="7" id="7" class="pinButton calc"/>
+    <input type="button" value="8" id="8" class="pinButton calc"/>
+    <input type="button" value="9" id="9" class="pinButton calc"/><br>
+    <input type="button" value="clear" id="clear" class="pinButton clear"/>
+    <input type="button" value="0" id="0 " class="pinButton calc"/>
+    <input type="button" value="enter" id="enter" class="pinButton enter"/>
+  </form>
+</div>
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+    
     </body>
 </html>
        

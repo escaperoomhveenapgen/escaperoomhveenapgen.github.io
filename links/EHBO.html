@@ -5,14 +5,14 @@
           <title>Deur van EHBO ruimte</title>
          <link rel="stylesheet" type="text/css" href="/css/gebouw.css">
 <script type="text/javascript">
- function passwd(){
+function ValidatePassword() {
 
-  var password = prompt('Hoeveel stoelen stonden voor het bord in de jongste jeugd?');
-  if(password.toLowerCase() == array("twee"; "TWEE"; "Twee"; "2";){
-    window.open("links/EHBOruimte.html")    
-  }else{
-    alert("Dit klopt niet");
+  var password = prompt("Please enter password to proceed", "");
+
+  if (password == "Admin Password") {
+    return true;
   }
+  return false;
 }
 </script>
             </head>
@@ -20,5 +20,7 @@
           <body>
             <div class="image">
                <img src="/images/Deur_EHBO.jpg" alt="Deur_EHBO" width="100%" />
-              <a href="https://escaperoomhveenapgen.github.io/links/EHBOruimte.html" style="top: 5.1%; left: 35%; width: 24.6%; height: 91.3%;" onClick="javascript:passwd()"></a>
+              <a href="https://escaperoomhveenapgen.github.io/links/EHBOruimte.html" style="top: 5.1%; left: 35%; width: 24.6%; height: 91.3%;" onclick="return ValidatePassword();"></a>
               </div>
+      </body>
+</html>

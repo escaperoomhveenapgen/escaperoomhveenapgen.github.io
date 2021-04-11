@@ -196,7 +196,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
         .nr2 {
@@ -209,7 +209,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
         .nr3 {
@@ -222,7 +222,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
        .nr4 {
@@ -235,7 +235,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
         .nr5 {
    display: inline-block;
@@ -247,7 +247,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
 
        .nr6 {
@@ -260,7 +260,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
        .nr7 {
@@ -273,7 +273,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
        .nr8 {
@@ -286,7 +286,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
        .nr9 {
@@ -299,7 +299,7 @@
    position: absolute;
    left: 3px;
    top: 0;
-   font-size:8px;
+   font-size:10px;
  }
        
     </style>
@@ -343,9 +343,9 @@
     <div class="column001">
         <p><strong>Horizontaal</strong></p>
         <text>
-            4. Hetgeen wat de handen vasthouden in het embleem <text id="clue001" class="green001"></text><br />
-            6. Veelgebruikt snaarinstrument in de grote zaal <text id="clue002" class="green001"></text><br />
-            10. Waar de voorganger zit voor het begin van de dienst <text id="clue003" class="green001"></text>
+            3. Waar de voorganger zit voor het begin van de dienst <text id="clue001" class="green001"></text><br />
+            4. Hetgeen wat de handen vasthouden in het embleem <text id="clue002" class="green001"></text><br />
+            6. Veelgebruikt snaarinstrument in de grote zaal <text id="clue003" class="green001"></text>
         </text>
     </div>
     <div class="column002">
@@ -416,11 +416,51 @@
                 document.getElementById("names003").value = m03;
             }
 
-            var check001 = w003 + w002 + w001;
-            if (check001 == 3) {
+            var check001 = w060 + w061 + w062 + w063 + w064 + w065 + w066 + w067 + w068 + w069 + w070;
+            if (check001 == 11) {
                 clue001.innerHTML = "✔";
             }
 
+           var check002 = w020 + w021 + w022 + w023 + w024 + w025;
+            if (check002 == 6) {
+                clue002.innerHTML = "✔";
+            }
+           
+            var check003 = w029 + w030 + w031 + w032 + w033;
+            if (check003 == 5) {
+                clue003.innerHTML = "✔";
+            }
+           
+            var check011 = w004 + w018 + w032 + w046 + w060 + w074 + w088 + w102 + w116 + w130 + w144 + w158;
+            if (check011 == 12) {
+                clue011.innerHTML = "✔";
+            }
+           
+            var check012 = w007 + w021 + w035;
+            if (check012 == 3) {
+                clue012.innerHTML = "✔";
+            }
+           
+            var check013 = w025+ w039 + w053 + w067 + w081 + w095 + w109;
+            if (check013 == 7) {
+                clue013.innerHTML = "✔";
+            }
+           
+            var check014 = w041 + w055 + w069 + w083 + w097 + w111 + w125;
+            if (check014 == 7) {
+                clue014.innerHTML = "✔";
+            }
+           
+            var check015 = w048 + w062 + w076 + w090 + w104 + w118 + w132 + w146 + w160;
+            if (check015 == 9) {
+                clue015.innerHTML = "✔";
+            }
+           
+            var check016 = w050+ w064 + w078 + w092 + w106 + w120 + w134 + w148 + w162;
+            if (check016 == 9) {
+                clue016.innerHTML = "✔";
+            }
+           
             if (r == 13 && m04 == "j") {
                 w004 = 1;
                 document.getElementById("names004").value = m04;
@@ -434,10 +474,7 @@
                 document.getElementById("names006").value = m06;
             }
 
-            var check002 = w004 + w005;
-            if (check002 == 2) {
-                clue021.innerHTML = "✔";
-            }
+           
 
             if (r == 13 && m07 == "h") {
                 w007 = 1;

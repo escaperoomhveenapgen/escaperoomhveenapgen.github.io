@@ -1,5 +1,5 @@
-if ($_POST["pincode"] === "1234") {
-  http_response_code(200);
+if (["pincode"] == "1234") {
+  window.location.href("https://escaperoomhveenapgen.github.io/links/bijzaal2.html")
 } else {
-  http_response_code(401);
+  alert("error");
 }

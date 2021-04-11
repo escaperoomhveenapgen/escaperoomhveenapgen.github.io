@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>Deur naar de bijzaal</title>
-        <link rel="stylesheet" type="text/css" href="/css/bijzaal.css">
-	</head>
-    <body>
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div class="pin-login" id="mainPinLogin">
-    <input type="password" readonly class="pin-login__text">
-    <div class="pin-login__numpad">
-    </div>
-	    </div>
-
-	    
-        <script type="text/javascript" src="/js/pinpad.js"></script>
-    </body>
+<head>
+ <title>Deur naar de bijzaal</title>
+ <style>
+  body {
+   background-color: lightblue;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "105") {
+    return true;
+   }
+   alert("Dit is fout");
+   return false;
+   }
+ </script>
+</head>
+<body>
+ <p style="font-size: 30pt;">Deze deur zit op slot!</p>
+ <p>Voer de code in om de deur te openen</p>
+ <p>Password:<input id="passwordBox" type="password"/></p>
+ <a href="https://escaperoomhveenapgen.github.io/links/bijzaal2.html" onclick="return checkPassword();">
+  Enter
+ </a>
+</body>
 </html>
-       

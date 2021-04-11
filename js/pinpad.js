@@ -1,162 +1,87 @@
-(function() {
-  const correctPin = "105";
-  let disableInput = false;
-  _pinArray = [];
+class PinLogin {
+    constructor ({el, loginEndpoint, redirectTo, maxNumbers = Infinity}) {
+        this.el = {
+            main: el,
+            numPad: el.querySelector(".pin-login__numpad"),
+            textDisplay: el.querySelector(".pin-login__text")
+        };
 
-  function reset() {
-    closeLock().then(() => {
-    window.location("https://escaperoomhveenapgen.github.io/links/bijzaal2.html");
-  });
-  }
-  
-  function closeLock() {
-    const topSection = document.querySelector(".pin-info");
-    const bottomSection = document.querySelector(".pin-display");
+        this.loginEndpoint = loginEndpoint;
+        this.redirectTo = redirectTo;
+        this.maxNumbers = maxNumbers;
+        this.value = "";
 
-    const promises = [
-      anime({
-        targets: bottomSection,
-        translateY: "0%",
-        duration: 600,
-        easing: "easeOutCubic"
-      }).finished,
-      anime({
-        targets: topSection,
-        translateY: "0%",
-        duration: 600,
-        easing: "easeOutCubic"
-      }).finished
-    ];
-
-    return Promise.all(promises);
-  }
-  function openLock() {
-    const topSection = document.querySelector(".pin-info");
-    const bottomSection = document.querySelector(".pin-display");
-
-    const promises = [
-      anime({
-        targets: bottomSection,
-        translateY: "125%",
-        duration: 600,
-        easing: "easeInCubic"
-      }).finished,
-      anime({
-        targets: topSection,
-        translateY: "-101%",
-        duration: 600,
-        easing: "easeInCubic"
-      }).finished
-    ];
-
-    return Promise.all(promises);
-  }
-
-  function errorShake() {
-    return Promise.resolve();
-  }
-  function bindPinToDisplay(pinArray, pinStatus) {
-    document.querySelectorAll(".pin-circle").forEach((el, index) => {
-      if (pinStatus === "success") {
-        el.classList.add("success");
-      } else if (pinStatus === "error") {
-        el.classList.add("error");
-      } else if (index > pinArray.length - 1) {
-        el.classList.remove("entered");
-        el.classList.remove("success");
-        el.classList.remove("error");
-      } else {
-        el.classList.add("entered");
-      }
-    });
-
-    if (pinStatus === "error") {
-      document.querySelector(".confirmation-dots").classList.add("error");
-    } else {
-      document.querySelector(".confirmation-dots").classList.remove("error");
+        this._generatePad();
     }
-  }
 
-  function evaluatePin(pinArray) {
-    const enteredPin = pinArray.join("");
-    if (enteredPin === correctPin) {
-      disableInput = true;
-      setTimeout(() => {
-        bindPinToDisplay(pinArray, "success");
-        setTimeout(() => {
-          openLock();
-        }, 500);
-      }, 250);
-      console.log("correct PIN");
-    } else {
-      disableInput = true;
-      setTimeout(() => {
-        bindPinToDisplay(pinArray, "error");
-        setTimeout(() => {
-          _pinArray = [];
-          bindPinToDisplay(_pinArray);
-          disableInput = false;
-        }, 350);
-      }, 250);
+    _generatePad() {
+        const padLayout = [
+            "1", "2", "3",
+            "4", "5", "6",
+            "7", "8", "9",
+            "backspace", "0", "done"
+        ];
+
+        padLayout.forEach(key => {
+            const insertBreak = key.search(/[369]/) !== -1;
+            const keyEl = document.createElement("div");
+
+            keyEl.classList.add("pin-login__key");
+            keyEl.classList.toggle("material-icons", isNaN(key));
+            keyEl.textContent = key;
+            keyEl.addEventListener("click", () => { this._handleKeyPress(key) });
+            this.el.numPad.appendChild(keyEl);
+
+            if (insertBreak) {
+                this.el.numPad.appendChild(document.createElement("br"));
+            }
+        });
     }
-  }
 
-  function initKeypad() {
-    document.querySelectorAll(".keypad--button[data-value]").forEach(el => {
-      el.addEventListener("click", evt => {
-        if (disableInput) {
-          return;
+    _handleKeyPress(key) {
+        switch (key) {
+            case "backspace":
+                this.value = this.value.substring(0, this.value.length - 1);
+                break;
+            case "done":
+                this._attemptLogin();
+                break;
+            default:
+                if (this.value.length < this.maxNumbers && !isNaN(key)) {
+                    this.value += key;
+                }
+                break;
         }
-        const value = evt.target.attributes["data-value"].value;
-        if (_pinArray.length < 3) {
-          _pinArray.push(value);
-          bindPinToDisplay(_pinArray);
-          if (_pinArray.length === 3) {
-            evaluatePin(_pinArray);
-          }
+
+        this._updateValueText();
+    }
+
+    _updateValueText() {
+        this.el.textDisplay.value = "_".repeat(this.value.length);
+        this.el.textDisplay.classList.remove("pin-login__text--error");
+    }
+
+    _attemptLogin() {
+        if (this.value.length > 0) {
+            fetch(this.loginEndpoint, {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: `pincode=${this.value}`
+            }).then(response => {
+                if (response.status === 200) {
+                    window.location.href = this.redirectTo;
+                } else {
+                    this.el.textDisplay.classList.add("pin-login__text--error");
+                }
+            })
         }
-      });
-    });
+    }
+}
 
-    document
-      .querySelector(".keyboard--button__back-arrow")
-      .addEventListener("click", () => {
-        if (disableInput) {
-          return;
-        }
-        _pinArray.pop();
-        bindPinToDisplay(_pinArray);
-      });
-
-    document
-      .querySelector(".keyboard--button__x")
-      .addEventListener("click", () => {
-        if (disableInput) {
-          return;
-        }
-        _pinArray = [];
-        bindPinToDisplay(_pinArray);
-      });
-    
-    document.querySelector('#reset-button').addEventListener('click', () => {
-      reset();
-    })
-  }
-
-  function initLayout() {
-    const containerHeight = document.querySelector(".container").offsetHeight;
-    const keypadHeight = document.querySelector(".pin-display").offsetHeight;
-    document.querySelector(".pin-info").style.height = `${containerHeight -
-      keypadHeight +
-      1}px`;
-  }
-
-  function init() {
-    initKeypad();
-    initLayout();
-  }
-
-  init();
-})();
-
-    
+new PinLogin({
+    el: document.getElementById("mainPinLogin"),
+    loginEndpoint: "login.js",
+    redirectTo: "dashboard.html"
+});

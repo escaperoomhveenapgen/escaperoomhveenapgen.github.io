@@ -2,434 +2,69 @@
 <html>
     <head> 
         <title>Deur naar de bijzaal</title>
-        <style>
- * {
-	 margin: 0;
-	 padding: 0;
-	 box-sizing: border-box;
-}
- body {
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: center;
-	 align-items: center;
-	 width: 100vw;
-	 height: 100vh;
-	 background: linear-gradient(to right top, #78009c, #663eba, #4d5ed0, #2f79e1, #1291eb);
-}
- .device {
-	 position: relative;
-	 border-radius: 16px;
-	 margin: 0 auto;
-	 display: inline-block;
-	 transform: scale(1);
-}
- .device .device-bezel {
-	 border-radius: inherit;
-	 padding: 36px 10px 24px 10px;
-	 overflow: hidden;
-	 background: linear-gradient(240deg, #8da4c3 0%, #4f8285 30%, #070f0a 35%, #0a0606 100%);
-	 position: relative;
-	 box-sizing: content-box;
-}
- .device .device-viewport {
-	 contain: strict;
-	 width: 350px;
-	 height: 622.2222222222px;
-	 background: white;
-	 border-radius: inherit;
-	 transform: scale(1);
-}
- * {
-	 font-family: "Montserrat", sans-serif;
-	 user-select: none;
-}
- .container {
-	 background: transparent;
-	 height: 100%;
-}
- .content {
-	 background: white;
-}
- .content img {
-	 height: 200px;
-	 width: 100%;
-	 object-fit: cover;
-	 object-position: center;
-}
- .body-content {
-	 padding: 16px;
-}
- .body-content h3 {
-	 margin-bottom: 16px;
-}
- .body-content p {
-	 line-height: 1.5em;
-	 margin-bottom: 8px;
-}
- .body-content button {
-	 width: 100%;
-	 height: 48px;
-	 border-radius: 1000px;
-	 background: cyan;
-	 border: none;
-	 outline: none;
-	 margin-top: 24px;
-	 cursor: pointer;
-}
- .pin-info {
-	 position: fixed;
-	 top: 0;
-	 left: 0;
-	 right: 0;
-	 background: white;
-	 background: #eaeaea;
-}
- .pin-display {
-	 position: fixed;
-	 bottom: 0;
-	 left: 0;
-	 right: 0;
-	 background: white;
-}
- .keypad {
-	 padding: 16px;
-	 background: white;
-}
- .keypad--row {
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: space-between;
-	 align-items: center;
-}
- .keypad--button {
-	 font-family: "Montserrat", sans-serif;
-	 height: 48px;
-	 width: 100%;
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: center;
-	 align-items: center;
-	 font-size: 24px;
-	 font-weight: 600;
-	 cursor: pointer;
-	 transition: all 100ms ease-out;
-}
- .keypad--button:active {
-	 background: #eaeaea;
-}
- .confirmation-dots {
-	 margin-bottom: 48px;
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: center;
-	 align-items: center;
-}
- .confirmation-dots.error {
-	 animation-name: shake;
-	 animation-duration: 300ms;
-}
- .confirmation-dots svg {
-	 height: 24px;
-	 max-height: 24px;
-	 width: 139px;
-}
- .confirmation-dots .pin-circle {
-	 transition: all 100ms ease-out;
-	 fill: white;
-	 stroke-width: 2px;
-	 stroke: black;
-	 outline-offset: -2px;
-	 outline-width: 2px;
-}
- .confirmation-dots .pin-circle.entered {
-	 fill: black;
-}
- .confirmation-dots .pin-circle.success {
-	 fill: green;
-	 stroke: green;
-}
- .confirmation-dots .pin-circle.error {
-	 fill: red;
-	 stroke: red;
-}
- .circle-lock--container {
-	 height: 72px;
-	 position: relative;
-	 display: flex;
-	 justify-content: center;
-	 flex-direction: row;
-}
- .circle-lock {
-	 width: 80px;
-	 height: 80px;
-	 background: white;
-	 border-radius: 1000px;
-	 position: relative;
-	 top: -40px;
-	 box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.12);
-	 display: flex;
-	 flex-direction: row;
-	 justify-content: center;
-	 align-items: center;
-}
- .circle-lock .lock-icon {
-	 color: #333;
-}
- .page-title {
-	 font-size: 28px;
-	 line-height: 32px;
-	 text-align: center;
-	 font-weight: 700;
-}
- .pin-info {
-	 display: flex;
-	 flex-direction: column;
-	 justify-content: center;
-	 align-items: center;
-}
- @keyframes shake {
-	 10%, 90% {
-		 transform: translate3d(-1px, 0, 0);
-	}
-	 20%, 80% {
-		 transform: translate3d(2px, 0, 0);
-	}
-	 30%, 50%, 70% {
-		 transform: translate3d(-4px, 0, 0);
-	}
-	 40%, 60% {
-		 transform: translate3d(4px, 0, 0);
-	}
-}
- 
-        </style>
-    </head>
+        <link rel="stylesheet" type="text/css" href="/css/bijzaal.css">
+	</head>
     <body>
-  <div class="device">
-  <div class="device-bezel">
-    <div class="device-viewport">
-      <!-- Begin custom content -->
-      <div class="content">
-        <img src="https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=1&h=426&w=640" />
-        <div class="body-content">
-          <h1>Dit klopt!</h1>
-          <h3>Ga verder naar de bijzaal</h3>
-          <button id="reset-button">Open de deur</button>
-        </div>
-      </div>
-      <div class="container">
-        <div class="pin-info">
-          <h1 class="page-title">Code voor de deur</h1>
-        </div>
-        <div class="pin-display">
-          <div class="circle-lock--container">
-            <div class="circle-lock">
-              <i class="material-icons lock-icon">lock</i>
-            </div>
-          </div>
-          <div class="confirmation-dots">
-            <svg>
-              <g>
-                <circle class="pin-circle" cx="30" cy="10" r="8"></circle>
-                <circle class="pin-circle" cx="70" cy="10" r="8"></circle>
-                <circle class="pin-circle" cx="110" cy="10" r="8"></circle>
-                
-              </g>
-            </svg>
-          </div>
-          <div class="keypad">
-            <div class="keypad--row">
-              <div class="keypad--button" data-value="1">1</div>
-              <div class="keypad--button" data-value="2">2</div>
-              <div class="keypad--button" data-value="3">3</div>
-            </div>
-            <div class="keypad--row">
-              <div class="keypad--button" data-value="4">4</div>
-              <div class="keypad--button" data-value="5">5</div>
-              <div class="keypad--button" data-value="6">6</div>
-            </div>
-            <div class="keypad--row">
-              <div class="keypad--button" data-value="7">7</div>
-              <div class="keypad--button" data-value="8">8</div>
-              <div class="keypad--button" data-value="9">9</div>
-            </div>
-            <div class="keypad--row">
-              <div class="keypad--button keyboard--button__back-arrow"><i class="material-icons">arrow_back</i></div>
-              <div class="keypad--button" data-value="0">0</div>
-              <div class="keypad--button keyboard--button__x">x</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end custom content -->
-    </div>
-  </div>
-</div>
-        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
- <script>
-     (function() {
-  const correctPin = "105";
-  let disableInput = false;
-  _pinArray = [];
+ <div class="device">
+	 <div class="device-bezel">
+		 <div class="device-viewport">
+	 <div class="content">
+	 <div class="body_content">
+		 <h1> Het is gelukt!</h1>
+		 <button id="reset_button"> Open de deur</button>
+	 </div> 
+	 </div>
+	 <div class="container"> 
+		 <div class="pin-info">
+			 <h1 class="page-title">Open de deur</h1> 
+		 </div>
+		 <div class="pin-display">
+			 <div class="circle-lock-container">
+				 <div class="circle-lock">
+					 <i class="material-icons lock-icon">lock</i>
+				 </div>
+			 </div>
+			 <div class="confirmation-dots">
+				 <svg>
+					 <g>
+						 <circle class="pin-circle" cx="30" cy="10" r="8"></circle>
+						 <circle class="pin-circle" cx="70" cy="10" r="8"></circle>
+						 <circle class="pin-circle" cx="110" cy="10" r="8"></circle>
+					 </g>
+				 </svg>
+			 </div>
+ <div class="keypad-row">
+ <div class="keypad-button" data-value="1">1</div>
+<div class="keypad-button" data-value="2">2</div>
+ <div class="keypad-button" data-value="3">3</div>
+					  </div>
+<div class="keypad-row"> 
+	<div class="keypad-button" data-value="4">4</div>
+	<div class="keypad-button" data-value="5">5</div>
+	 <div class="keypad-button" data-value="6">6</div>
+			 </div>
+<div class="keypad-row">
+	<div class="keypad-button" data-value="7">7</div>
+	 <div class="keypad-button" data-value="8">8</div>
+	<div class="keypad-button" data-value="9">9</div>
+						 </div>
+<div class="keypad-row">
+		       <div class="keypad-button-keyboard-button_back-arrow"><i class="material-icons">arrow_back</i></div>
+	<div class="keypad-button" data-value="0">0</div>
+	<div class="keypad-button keyboard-button_x>x</div>
+		    </div>
+		    </div>
+		    </div>
+		    </div>
+		    </div>
+		    </div>
+		    
 
-  function reset() {
-    closeLock().then(() => {
-      window.open("https://escaperoomhveenapgen.github.io/links/kunsthok.html);
-    });
-  }
 
-  function closeLock() {
-    const topSection = document.querySelector(".pin-info");
-    const bottomSection = document.querySelector(".pin-display");
 
-    const promises = [
-      anime({
-        targets: bottomSection,
-        translateY: "0%",
-        duration: 600,
-        easing: "easeOutCubic"
-      }).finished,
-      anime({
-        targets: topSection,
-        translateY: "0%",
-        duration: 600,
-        easing: "easeOutCubic"
-      }).finished
-    ];
 
-    return Promise.all(promises);
-  }
-  function openLock() {
-    const topSection = document.querySelector(".pin-info");
-    const bottomSection = document.querySelector(".pin-display");
-
-    const promises = [
-      anime({
-        targets: bottomSection,
-        translateY: "125%",
-        duration: 600,
-        easing: "easeInCubic"
-      }).finished,
-      anime({
-        targets: topSection,
-        translateY: "-101%",
-        duration: 600,
-        easing: "easeInCubic"
-      }).finished
-    ];
-
-    return Promise.all(promises);
-  }
-
-  function errorShake() {
-    return Promise.resolve();
-  }
-  function bindPinToDisplay(pinArray, pinStatus) {
-    document.querySelectorAll(".pin-circle").forEach((el, index) => {
-      if (pinStatus === "success") {
-        el.classList.add("success");
-      } else if (pinStatus === "error") {
-        el.classList.add("error");
-      } else if (index > pinArray.length - 1) {
-        el.classList.remove("entered");
-        el.classList.remove("success");
-        el.classList.remove("error");
-      } else {
-        el.classList.add("entered");
-      }
-    });
-
-    if (pinStatus === "error") {
-      document.querySelector(".confirmation-dots").classList.add("error");
-    } else {
-      document.querySelector(".confirmation-dots").classList.remove("error");
-    }
-  }
-
-  function evaluatePin(pinArray) {
-    const enteredPin = pinArray.join("");
-    if (enteredPin === correctPin) {
-      disableInput = true;
-      setTimeout(() => {
-        bindPinToDisplay(pinArray, "success");
-        setTimeout(() => {
-          openLock();
-        }, 500);
-      }, 250);
-      console.log("correct PIN");
-    } else {
-      disableInput = true;
-      setTimeout(() => {
-        bindPinToDisplay(pinArray, "error");
-        setTimeout(() => {
-          _pinArray = [];
-          bindPinToDisplay(_pinArray);
-          disableInput = false;
-        }, 350);
-      }, 250);
-    }
-  }
-
-  function initKeypad() {
-    document.querySelectorAll(".keypad--button[data-value]").forEach(el => {
-      el.addEventListener("click", evt => {
-        if (disableInput) {
-          return;
-        }
-        const value = evt.target.attributes["data-value"].value;
-        if (_pinArray.length < 3) {
-          _pinArray.push(value);
-          bindPinToDisplay(_pinArray);
-          if (_pinArray.length === 3) {
-            evaluatePin(_pinArray);
-          }
-        }
-      });
-    });
-
-    document
-      .querySelector(".keyboard--button__back-arrow")
-      .addEventListener("click", () => {
-        if (disableInput) {
-          return;
-        }
-        _pinArray.pop();
-        bindPinToDisplay(_pinArray);
-      });
-
-    document
-      .querySelector(".keyboard--button__x")
-      .addEventListener("click", () => {
-        if (disableInput) {
-          return;
-        }
-        _pinArray = [];
-        bindPinToDisplay(_pinArray);
-      });
-    
-    document.querySelector('#reset-button').addEventListener('click', () => {
-      reset();
-    })
-  }
-
-  function initLayout() {
-    const containerHeight = document.querySelector(".container").offsetHeight;
-    const keypadHeight = document.querySelector(".pin-display").offsetHeight;
-    document.querySelector(".pin-info").style.height = `${containerHeight -
-      keypadHeight +
-      1}px`;
-  }
-
-  function init() {
-    initKeypad();
-    initLayout();
-  }
-
-  init();
-})();
-        </script>
-        
+	    
+        <script type="text/javascript" src="/js/pinpad.js"></script>
     </body>
 </html>
        

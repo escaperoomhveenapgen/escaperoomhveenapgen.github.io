@@ -2,12 +2,14 @@
 <html>
 <head>
  <title>Deur naar de bijzaal</title>
+ <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
  <style>
   body {
    background-image: url('images/EHBOruimte.jpg');
    padding: 30px;
   }
   a{ text-align: center;}
+  <div style="background-image: url('img_girl.jpg');">
  </style>
  <script>
   function checkPassword() {
@@ -22,10 +24,11 @@
  </script>
 </head>
 <body>
+ <div style="background-image: url('/images/EHBOruimte.jpg');">
  <p style="font-size: 30pt; text-align:center">Deze deur zit op slot!</p>
  <p style="text-align: center">Voer de code in om de deur te openen</p>
  <p style="text-align: center">Code:<input id="passwordBox" type="password"/></p>
- <a href="https://escaperoomhveenapgen.github.io/links/bijzaal2.html" onclick="return checkPassword();">
+ <a class="woop" style="text-align: center" href="https://escaperoomhveenapgen.github.io/links/bijzaal2.html" onclick="return checkPassword();">
   Enter
  </a>
 </body>

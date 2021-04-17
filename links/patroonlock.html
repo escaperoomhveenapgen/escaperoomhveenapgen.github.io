@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Pattern Lock</title>
+      <meta name='viewport' content='width=device-width' />
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <style>
+      html{
+	      height:100%;
+      }
+      body {
+	      background: url('img/back.jpg') no-repeat fixed center;
+	      height:100%;
+      }
+      .wraper {
+	      color: #eeeeee;
+      }
+	.patWraper{
+		position:absolute;
+		bottom:20px;
+		width:100%
+	}
+	#msg{
+		padding:20px;
+	}
+      </style>
+   </head>
+   <body>
+   
+   <div id='wraper' class='wraper'>
+     <h2 class='text-center'>Pattern Lock</h2><br/>
+     <p>A Demo Created By - Shivam Tiwari</p>
+     <big><div id='msg'></div></big>
+     </div>
+     <div class='patWraper'>
+     <div class='text-center'>
+     		<canvas id='patternCanvas' width='300px' height='300px' style='border:1px solid #d3d3d3;'></canvas>
+     </div>
+     </div>
+     <script src='js/patternlock.js'></script>
+     <script>
+     	var pat = new PatternLock({
+     		'dotSize': 10,
+     		'canvasId': 'patternCanvas',
+     		'patternSize': [3,3]
+     	});
+     	//pat.setCanvas('patternCanvas');
+     	pat.createLock(function(err, comb){
+     		if(err){
+     			addMessage('danger', err);
+     			}
+     		else{
+     		
+     			if(comb==='235689') //this is just for demo. You should do this step on server side.
+				addMessage('success', '<strong>Success!</strong> You Have Successfully Logged In. Redirecting To Your Account.')
+				else
+					addMessage('danger', '<strong>Error :</strong> Sorry Wrong Pattern. Please Try Again.')
+     			}
+     	});
+	function addMessage(type, message){
+		let msgBox = document.getElementById('msg');
+		msgBox.innerHTML = "<div class='text text-"+type+"'>"+message+"</div>";
+		console.log(msgBox.innerHTML);
+	}
+     </script>
+    
+   </body>
+</html>

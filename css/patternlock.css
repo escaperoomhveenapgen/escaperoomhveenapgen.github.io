@@ -1,6 +1,6 @@
 body{
 	background-image: url(../images/phone2.jpg);
-	background-size: 400px 1000px;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }

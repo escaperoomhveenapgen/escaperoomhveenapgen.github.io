@@ -19,9 +19,9 @@ body{
     	linear,
     	left bottom,
     	left top,
-    	color-stop(0.19, rgb(30,30,30)),
-    	color-stop(0.89, rgb(85,85,85)),
-    	color-stop(1, rgb(100,100,100))
+    	color-stop(0.19, rgb(247,203,161)),
+    	color-stop(0.89, rgb(249,165,123)),
+    	color-stop(1, rgb(249,148,108))
 	);
 	background-image: -moz-linear-gradient(
     	center bottom,

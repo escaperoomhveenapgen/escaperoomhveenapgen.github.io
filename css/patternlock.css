@@ -1,8 +1,9 @@
 body{
 	background-image: url(../images/phone2.jpg);
-	background-size: cover;
+	background-size: 40% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: #CCC;
 }
 
 .patternlockcontainer{

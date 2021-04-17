@@ -17,9 +17,11 @@ function ValidatePassword() {
 }
 </script>
            <script type="text/javascript">
-              function playAudio("images/Kom op het balkon (mp3food.com).mp3") {
-  new Audio(url).play();
-}
+          var myAudio = document.getElementById("myAudio");
+
+function togglePlay() {
+  return myAudio.paused ? myAudio.play() : myAudio.pause();
+};
            </script>
             </head>
      
@@ -28,7 +30,8 @@ function ValidatePassword() {
                <img src="/images/lichtknopdonker.jpg" alt="lichtknop" width="100%" />
               <a href="https://escaperoomhveenapgen.github.io/links/lichtknop1.html" style="top: 11.6%; left: 40.7%; width: 9.4%; height: 17.9%;"></a>
                <a href="/images/Kom op het balkon (mp3food.com).mp3" style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onclick="return ValidatePassword(); playAudio("images/Kom op het balkon (mp3food.com).mp3");"></a>
-                                                                                                                                                  
+                         <audio id="myAudio" src="/images/Kom op het balkon (mp3food.com).mp3" preload="auto"></audio>
+                              <a style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();togglePlay()"></a>                                                                                                                         
                                                                                                                                                  
              </div>
               

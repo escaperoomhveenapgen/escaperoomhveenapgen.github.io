@@ -16,12 +16,7 @@ function ValidatePassword() {
   alert('Heb je de hint al gevonden?');return false;
 }
 </script>
-           <script type="text/javascript">
-          function togglePlay() {
-  var myAudio = document.getElementById("myAudio");
-  return myAudio.paused ? myAudio.play() : myAudio.pause();
-};
-           </script>
+           
             </head>
      
           <body>
@@ -29,8 +24,8 @@ function ValidatePassword() {
                <img src="/images/lichtknopdonker.jpg" alt="lichtknop" width="100%" />
               <a href="https://escaperoomhveenapgen.github.io/links/lichtknop1.html" style="top: 11.6%; left: 40.7%; width: 9.4%; height: 17.9%;"></a>
                <a href="/images/Kom op het balkon (mp3food.com).mp3" style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onclick="return ValidatePassword(); playAudio("images/Kom op het balkon (mp3food.com).mp3");"></a>
-                         <audio id="myAudio" src="/images/Kom op het balkon (mp3food.com).mp3" preload="auto"></audio>
-                              <a style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();togglePlay()"></a>                                                                                                                         
+                         <audio id="audio" src="/images/Kom op het balkon (mp3food.com).mp3"></audio>
+                              <a style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();playSound()"></a>                                                                                                                         
                                                                                                                                                  
              </div>
               
@@ -38,5 +33,12 @@ function ValidatePassword() {
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/spreekkamer3.html'" type="button" class="woop">
          Terug naar de spreekkamer</button>
                                                                                                                                       </div>
+             
+             <script>
+  function playSound() {
+  var sound = document.getElementById("audio");
+  sound.play();
+}
+</script>
                                                                                                                                       </body>
                                                                                                                                       </html>

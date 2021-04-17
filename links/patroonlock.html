@@ -7,10 +7,17 @@
   <link rel="stylesheet" type="text/css" href="/css/patternlock.css"/>
 <script src="/js/patternlock.js"></script>
 	<script>
-        function submitform(){
-            alert("You entered " + document.getElementById("password").value);
-            return true;
+      
+		function submitform(){
+       if(document.getElementById('password').value == '235689'){
+        alert('Correct Password!'); 
+          location.href = "http://google.com";
+         } else {
+         alert('Wrong Password!');
+          return false;
         }
+       }
+		
     </script>
 
 <style>

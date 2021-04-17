@@ -10,10 +10,16 @@ function ValidatePassword() {
   var password = prompt("Hoeveel volumebalkjes zijn er in het geluid?", "");
 
   if (password == "drie"|| password == "DRIE" || password =="Drie" || password =="3") {
-       soundplay:("/images/Kom op het balkon (mp3food.com).mp3);
+       play();
      return true;
   }
   alert('Heb je de hint al gevonden?');return false;
+}
+           </script>
+           <script>
+    function play() {
+  var audio = new Audio('https://escaperoomhveenapgen.github.io/images/Kom%20op%20het%20balkon%20(mp3food.com).mp3');
+  audio.play();
 }
 </script>
            
@@ -23,25 +29,17 @@ function ValidatePassword() {
             <div class="image">
                <img src="/images/lichtknopdonker.jpg" alt="lichtknop" width="100%" />
               <a href="https://escaperoomhveenapgen.github.io/links/lichtknop1.html" style="top: 11.6%; left: 40.7%; width: 9.4%; height: 17.9%;"></a>
-               <div id="player>                       
+               <a style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();"></a> 
+             </div>                                                                                                                     
              
-                              <astyle="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();"></a> </div>                                                                                                                     
-                          
-                                                                                                          
-             </div>
               
           <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/spreekkamer3.html'" type="button" class="woop">
          Terug naar de spreekkamer</button>
                                                                                                                                       </div>
              
-             <script>
+ 
 
-function soundPlay(("/images/Kom op het balkon (mp3food.com).mp3)){
-var myAudio = document.getElementById("player");
-myAudio.load();
-myAudio.play();
-}
-</script>
+
                                                                                                                                       </body>
                                                                                                                                       </html>

@@ -24,8 +24,8 @@ function ValidatePassword() {
                <img src="/images/lichtknopdonker.jpg" alt="lichtknop" width="100%" />
               <a href="https://escaperoomhveenapgen.github.io/links/lichtknop1.html" style="top: 11.6%; left: 40.7%; width: 9.4%; height: 17.9%;"></a>
                <a href="/images/Kom op het balkon (mp3food.com).mp3" style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onclick="return ValidatePassword(); playAudio("images/Kom op het balkon (mp3food.com).mp3");"></a>
-                         <audio id="player" style="display: none"><source id="player-src" src='#'></source></audio>
-                              <a style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();"></a>                                                                                                                         
+                         <audio id="player" style="display: none">
+                              <a style="top: 72.9%; left: 44.1%; width: 10.4%; height: 20%;" onClick="return ValidatePassword();"></a> </audio>                                                                                                                        
                           
                                                                                                           
              </div>
@@ -38,8 +38,6 @@ function ValidatePassword() {
              <script>
 
 function soundPlay(("/images/Kom op het balkon (mp3food.com).mp3)){
-var audioElement = document.getElementById('player-src');
-audioElement.src ="/images/Kom op het balkon (mp3food.com).mp3);
 var myAudio = document.getElementById("player");
 myAudio.load();
 myAudio.play();

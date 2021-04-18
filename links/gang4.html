@@ -3,13 +3,46 @@
 <head>
  <title>Gang Spreekkamer</title>
  <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+ 
+<script type="text/javascript">
+function ValidatePassword() {
+
+  var password = prompt("Wat is het nummer op de telefoon?", "");
+
+  if (password == "+31 6 38466292"|| password == "0638466292" || password =="06 38466292" || password =="31638466292" || password =="38466292" ) {
+        window.location ="https://escaperoomhveenapgen.github.io/links/spreekkamer1.html";
+     return true;
+  }
+  alert('Nee, dit klopt niet');return false;
+}
+ </script>
+ 
+ <script type="text/javascript">
+function ValidatePasscode() {
+ 
+ var passcode = prompt("Wat was de uitkomst van de puzzel in de spreekkamer?", "");
+ 
+ if (passcode =="lichtknop") { 
+  window.location ="https://escaperoomhveenapgen.github.io/links/grotezaal.html";
+  return true;
+ }
+ alert('Kijk nog eens goed naar de puzzel'); return false;
+} 
+ 
+</script>
+  
   </head>
   
      <body>
             <div class="image">
                <img src="/images/gang4.jpg" alt="Gang" width="100%" />
-           <a href="https://escaperoomhveenapgen.github.io/links/leestafel2.html" style="top: 37.5%; left: 29.2%; width: 13.2%; height: 9.2%;"></a>
-       </div>
+                        <a href="https://escaperoomhveenapgen.github.io/links/spreekkamer1.html" style="top: 28.7%; left: 37.4%; width: 2.4%; height: 38.8%;" onclick="returnValidatePassword();"></a>
+           <a href="javascript: alert('Sorry, probeer iets anders')"  style="top: 33.5%; left: 40.7%; width: 6.4%; height: 38.8%;"></a>
+           <a href="javascript: alert('Sorry, probeer iets anders')"  style="top: 33%; left: 51.3%; width: 1.7%; height: 25.9%;"></a>
+           <a href="javascript: alert('Sorry, probeer iets anders')"  style="top: 24.8%; left: 53.8%; width: 2.6%; height: 41.1%;"></a>
+           <a href="https://escaperoomhveenapgen.github.io/links/grotezaal.html" style="top: 19.2%; left: 57.7%; width: 5.1%; height: 66.4%;" onclick="returnValidatePasscode();"></a>
+
+      </div>
        
         <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/gang2.html'" type="button" class="woop">

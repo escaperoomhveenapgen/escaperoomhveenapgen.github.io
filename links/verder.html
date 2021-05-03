@@ -25,12 +25,18 @@
          border: 1px solid black;
             border-radius: 5px;}
          
+         .section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
          
                 </style>
       </head>
      
 
 <body>
+   <section>
   <div class="top" style="text-align:center">
     <h1>Vul hier de antwoorden uit de puzzels in. Wacht hierna op een mail terug.</h1> 
     <p> Bent u nog iets vergeten ergens anders in het gebouw? Klik op de linkjes hieronder om terug te gaan naar de desbetreffende kamer. Sluit <u>dit</u> tabblad <b>NIET</b>.<p>
@@ -63,7 +69,7 @@
   <br></ br>
            <input type="submit" class="woop" value="Verstuur"><br />
   </div>
-
+</section>
   <br></br>
          <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/grotedeur.html'" type="button" class="woop">

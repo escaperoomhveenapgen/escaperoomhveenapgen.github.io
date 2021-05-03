@@ -7,11 +7,11 @@
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
     
       <style>
-         top {
+         .top {
             top:10%;}
                  
          
-         left{
+         .left{
          top: 30%;
          width:49%;
          float:left;
@@ -19,7 +19,7 @@
          border-radius: 5px;
          padding: 2px;}
          
-         right{
+         .right{
             top: 30%;
          width:49%;
          float:right;
@@ -32,6 +32,16 @@
   display: table;
   clear: both;
 }
+         .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+         .whiterow{
+  background-color: white;
+  height: 50px;
+  width:100%;
+}
          
                 </style>
       </head>
@@ -41,10 +51,13 @@
    <section>
   <div class="top" style="text-align:center">
     <h1>Vul hier de antwoorden uit de puzzels in. Wacht hierna op een mail terug.</h1> 
-    <p> Bent u nog iets vergeten ergens anders in het gebouw? Klik op de linkjes hieronder om terug te gaan naar de desbetreffende kamer. Sluit <u>dit</u> tabblad <b>NIET</b>.<p>
+    <p> Bent u nog iets vergeten ergens anders in het gebouw? Klik op de linkjes links om terug te gaan naar de desbetreffende kamer. Sluit <u>dit</u> tabblad <b>NIET</b>.<p>
   </div>
   </ br>
 
+   <div class="whiterow"> 
+   </div>
+   
      <div class="left" style="text-align:center">
        <a style="color: black; font-size: 12px;" href="https://escaperoomhveenapgen.github.io/links/jongstejeugd.html">Jongste Jeugd</a><br></ br>
      <a style="color: black; font-size: 12px;" href="https://escaperoomhveenapgen.github.io/links/EHBOruimte.html">EHBO ruimte</a><br></ br>

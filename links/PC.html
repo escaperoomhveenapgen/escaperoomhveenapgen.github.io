@@ -27,17 +27,19 @@
               }
               
               
+	tvcont {
+		background: url('/images/desktop.jpg');
+		width: 100%;
+		position: relative;
 		   }
 		   
-		   .film-background {
-   z-index: 1;
-   position: absolute;
-   top: 8.3%;
-   left: 22.6%;
-   width: 55.8%;
-	height: 75.6%;		   
-}
-	
+	tvcont video {
+		top: 8.3%;
+		left: 22.6%;
+		   position: absolute;
+		   }
+		   
+		
            </style>
      </head>
      
@@ -50,16 +52,16 @@
               
                  <div class="whiterow"></div>
 		      
-                           <div>
-    <img src="/images/desktop.jpg" width="100%" style="z-index:0; position:relative;">
-    
-     <video class="film-background" controls>
+		     		      
+                           <div id="tvcont">
+       
+     <video width="55.8%" height="75.6%" controls>
   <source src="/images/zaal/geheimbericht.mp4" type="video/mp4">
   <source src="/images/zaal/geheimbericht.wmv" type="video/wmv">
   Je kunt de video niet bekijken. Open de link in een andere browser of stuur een bericht.
 </video>
-                   
-             </div>
+              </div>
+		      
                   <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/looppad.html'" type="button" class="woop">
          Terug naar de grote zaal</button>

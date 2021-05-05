@@ -59,14 +59,31 @@
   clear: both;
 }
          
-         .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+         .col25{
+            float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+         .col75{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+            
+            
+            .row2::after {
+  content: "";
+  display: table;
+  clear: both;
 }
          
+         .input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
          
                 </style>
       </head>
@@ -91,19 +108,56 @@
    <p>De volgorde van invoeren staat niet vast.</p>
    </ br>
 <form action="https://formspree.io/f/xknkozee" method="post">
-  <label for="email"> Emailadres:</label><br />
+   <div class="row2">
+ <div class="col25">
+   <label for="email"> Emailadres:</label><br />
+   </div>
+   <div class="col75">
            <input type="email" name="email" id="email"><br />
+   </div>
+   </div>
+   <div class="row2">
+   <div class="col25">
   <label for="name">Uw voor- en achternaam:</label><br />
+   </div>
+   <div class="col75">
             <input type="text" name="name" id="name"><br />
+   </div>
+   </div>
+   <div class="row2">
+   <div class="col25">
   <label for="oplossing1">Datum 1:</label><br />
+   </div>
+   <div class="col75">
             <input type="text" name="oplossing1" id="oplossing1"><br />
+   </div>
+   </div>
+   <div class="row2">
+   <div class="col25">
   <label for="oplossing2">Datum 2:</label><br />
+      </div>
+   <div class="col75">
             <input type="text" name="oplossing2" id="oplossing2"><br />
+        </div>
+   </div>
+   <div class="row2">
+   <div class="col25">
   <label for="oplossing3">Naam 1:</label><br />
+      </div>
+   <div class="col75">
             <input type="text" name="oplossing3" id="oplossing3"><br />
+        </div>
+   </div>
+   <div class ="row2">
+   <div class="col25">
   <label for="oplossing4">Naam 2:</label><br />
+      </div>
+   <div class="col75">
             <input type="text" name="oplossing4" id="oplossing4"><br />
+      </div>
+   </div>
   <br></ br>
+   
            <input type="submit" class="woop" value="Verstuur"><br />
   </div>
          

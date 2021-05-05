@@ -94,7 +94,9 @@
       <section>
   <div class="top" style="text-align:center">
     <h1>U bent er bijna!!!</h1> 
-    <p> Deze deur is in het slot gevallen. Om de deur te kunnen openen, moet u de antwoorden van de puzzels hier in de grote zaal invullen.<p>
+    <p> Deze deur is in het slot gevallen. Om de deur te kunnen openen, moet u de antwoorden van de puzzels gevonden in de grote zaal invullen.<p>
+     <p> Bent u nog iets vergeten in andere zalen in het gebouw? Klik dan links op de foto van de zaal waar u naartoe wil.Een nieuw tabblad wordt geopend als u op de foto klikt. Laat <b>dit</b> tabblad open staan, anders moet u weer alle zalen door om hier te komen.</p>
+     <p style="font-size: 8px;"> <i> Als u per ongeluk dit tabblad wel sluit, laat dit ons dan even weten</i></p>
   </div>
    </section>
   </ br>
@@ -105,7 +107,7 @@
       
 <div class="right" style="text-align:center"> 
    <p>Vul hier de antwoorden uit de puzzels uit de grote zaal in om verder te kunnen gaan.</p>
-   <p>De volgorde van invoeren staat niet vast.</p>
+   <p><i> Er zit geen specifieke volgorde in de puzzels, dus voer de antwoorden in zoals u ze heeft opgelost"</i></p>
    </ br>
 <form action="https://formspree.io/f/xknkozee" method="post">
    <div class="row2">
@@ -113,49 +115,70 @@
    <label for="email"> Emailadres:</label><br />
    </div>
    <div class="col75">
-           <input type="email" name="email" id="email" class="input"><br />
+           <input type="email" name="email" id="email" class="input" placeholder="pietjansen@gmail.com"><br />
    </div>
    </div>
    <div class="row2">
    <div class="col25">
-  <label for="name">Uw voor- en achternaam:</label><br />
+  <label for="name">Voornaam:</label><br />
    </div>
    <div class="col75">
-            <input type="text" name="name" id="name" class="input"><br />
+            <input type="text" name="name" id="name" class="input" placeholder="Piet"><br />
    </div>
    </div>
+   
    <div class="row2">
    <div class="col25">
-  <label for="oplossing1">Datum 1:</label><br />
+  <label for="name2">Achternaam:</label><br />
    </div>
    <div class="col75">
-            <input type="text" name="oplossing1" id="oplossing1" class="input"><br />
+            <input type="text" name="name2" id="name2" class="input" placeholder="Jansen"><br />
+   </div>
+   </div>
+   
+   <div class="row2">
+   <div class="col25">
+  <label for="oplossing1">Puzzel 1:</label><br />
+   </div>
+   <div class="col75">
+            <input type="text" name="oplossing1" id="oplossing1" class="input" placeholder:"Antwoord 1"><br />
    </div>
    </div>
    <div class="row2">
    <div class="col25">
-  <label for="oplossing2">Datum 2:</label><br />
+  <label for="oplossing2">Puzzel 2:</label><br />
       </div>
    <div class="col75">
-            <input type="text" name="oplossing2" id="oplossing2" class="input"><br />
+            <input type="text" name="oplossing2" id="oplossing2" class="input" placeholder:"Antwoord 2"><br />
         </div>
    </div>
    <div class="row2">
    <div class="col25">
-  <label for="oplossing3">Naam 1:</label><br />
+  <label for="oplossing3">Puzzel 3:</label><br />
       </div>
    <div class="col75">
-            <input type="text" name="oplossing3" id="oplossing3" class="input"><br />
+            <input type="text" name="oplossing3" id="oplossing3" class="input" placeholder:"Antwoord 3"><br />
         </div>
    </div>
    <div class ="row2">
    <div class="col25">
-  <label for="oplossing4">Naam 2:</label><br />
+  <label for="oplossing4">Puzzel 4:</label><br />
       </div>
    <div class="col75">
-            <input type="text" name="oplossing4" id="oplossing4" class="input"><br />
+            <input type="text" name="oplossing4" id="oplossing4" class="input" placeholder:"Antwoord 4"><br />
       </div>
    </div>
+   
+   <div class ="row2">
+   <div class="col25">
+  <label for="overig">Overig:</label><br />
+      </div>
+   <div class="col75">
+            <textarea id="overig" name="overig" placeholder="Overige vragen of opmerkingen" style="height:100px;  width: 95%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"></textarea><br />
+      </div>
+   </div>
+   
+   
   <br></ br>
    
            <input type="submit" class="woop" value="Verstuur"><br />

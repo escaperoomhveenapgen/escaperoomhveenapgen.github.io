@@ -26,18 +26,11 @@
                    
               }
               
-              .layer1 {
-background-color: white;
-	opacity:1;
-	position: relative;
-height: 75.6%;
-width: 55.8%;
-top: 8.3%;
-left: 22.6%;
+              
 		   }
 		   
 		   .film-background {
-   z-index: -1;
+   z-index: 0;
    position: absolute;
    top: 8.3%;
    left: 22.6%;
@@ -58,10 +51,9 @@ left: 22.6%;
                  <div class="whiterow"></div>
 		      
                            <div>
-    <img src="/images/desktop.jpg" class="film-background">
+    <img src="/images/desktop.jpg" style="z-index:0; position:absolute;">
     
-       
-<video controls>
+     <video class="film-background" controls>
   <source src="/images/zaal/geheimbericht.mp4" type="video/mp4">
   <source src="/images/zaal/geheimbericht.wmv" type="video/wmv">
   Je kunt de video niet bekijken. Open de link in een andere browser of stuur een bericht.

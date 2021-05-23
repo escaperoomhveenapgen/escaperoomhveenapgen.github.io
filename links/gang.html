@@ -21,13 +21,13 @@ function ValidatePasscode() {
            <script type="text/javascript">
 function ValidatePassword() {
  
- var password = prompt("Wat is het laatste woord van de brief?", "");
+ var password = prompt("Welke kleur strikje werd er genoemd in 1 van de hints in de jongste jeugd? ", "");
  
- if (password =="Succes!") { 
+ if (password =="rood" || password == "Rood" || password == "ROOD") { 
   window.location ="https://escaperoomhveenapgen.github.io/links/jongstejeugd.html";
   return true;
  }
- alert('Kijk nog eens goed naar de brief en de hints'); return false;
+ alert('Kijk nog eens goed naar de hints in de jongste jeugd'); return false;
 } 
  
 </script>

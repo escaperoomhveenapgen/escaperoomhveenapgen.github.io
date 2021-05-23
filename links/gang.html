@@ -18,6 +18,19 @@ function ValidatePasscode() {
 } 
  
 </script>
+           <script type="text/javascript">
+function ValidatePassword() {
+ 
+ var password = prompt("Wat is het laatste woord van de brief?", "");
+ 
+ if (password =="Succes!") { 
+  window.location ="https://escaperoomhveenapgen.github.io/links/jongstejeugd.html";
+  return true;
+ }
+ alert('Kijk nog eens goed naar de brief en de hints'); return false;
+} 
+ 
+</script>
            
             </head>
      
@@ -26,9 +39,9 @@ function ValidatePasscode() {
                <img src="/images/gang_2.jpg" alt="gang" width="100%" />
         <a href="/images/Brief (2).jpg" style="top: 83%; left: 32%; width: 7%; height: 8%;" target="popup" onclick="window.open('/images/Brief (2).jpg','popup','width=600px,height=1200px'); return false;"></a>
                <a href="https://escaperoomhveenapgen.github.io/links/jongstejeugd.html" style="top: 42%; left: 29%; width: 6.2%; height: 23.6%;" onclick="return ValidatePasscode();"></a>
-               <a href="javascript: alert('Sorry, probeer iets anders')" style="top: 42%; left: 49%; width: 16%; height: 26%;"></a>
-               <a href="javascript: alert('Sorry, probeer iets anders')" style="top: 41%; left: 71%; width: 4%; height: 18%;"></a>
-               <a href="javascript: alert('Sorry, probeer iets anders')" style="top: 55%; left: 85%; width: 14%; height: 11%;"></a>
+              <a href="https://escaperoomhveenapgen.github.io/links/gang3.html" style="top: 42%; left: 49%; width: 16%; height: 26%;" onclick ="return ValidatePassword();" ></a>
+               <a href="https://escaperoomhveenapgen.github.io/links/mededelingenbord.html"  style="top: 41%; left: 71%; width: 4%; height: 18%;" onclick="return ValidatePasscode2();"></a>
+               <a href="https://escaperoomhveenapgen.github.io/links/leestafel.html" style="top: 55%; left: 85%; width: 14%; height: 11%;" onclick="return ValidatePassword2();"></a>
           
             </div>                              
           </body>

@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+   <html> 
+      
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Kunstbijzaal</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+          <style>
+            
+             body{
+                background-color: rgba(0, 148, 145, 0.5); 
+                background-size: cover; 
+                background-repeat: no-repeat;}
+            
+            .cool {
+              height: 70%;
+              width: 70%;
+              background-color: rgba(146, 163, 174, 1);
+              border-style: solid;
+              border-width: 2px;
+              border-color: black;
+              border-radius: 5px;
+               margin:auto;
+               text-align: center;
+               font-family: Balsamiq Sans;
+                          }
+             
+             
+            
+            .top{
+    position:absolute ;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+            
+            .span{
+    font-weight:bolder;
+    font-size:3em;
+    line-space:2em;
+    color:white;
+    opacity:1;
+    height: 20px;
+              width: 20px;
+              border-type: solid;
+              border-radius: 5px;
+                  }
+            
+            .a{
+text-decoration:none;
+font-weight:bolder;
+font-size:1em;
+}
+          </style>
+          
+          <script>
+		    //function that display value
+
+            function dis(val)
+
+            {
+
+                document.getElementById("result").value+=val
+
+            }
+
+
+//function that evaluates the digit and return result
+
+            function solve()
+
+            {
+
+                let x = document.getElementById("result").value
+
+                let y = eval(x)
+
+                document.getElementById("result").value = y
+                
+
+ 
+ if (y== "ROMTE"||y=="romte"||y=="Romte"){
+     h = document.getElementById("bottom")
+     h.style.display="block"
+ }            
+                
+        else{
+            alert("Dit is fout. Kloppen alle antwoorden en de volgorde? ")
+            document.getElementById("result").value = ""
+            
+document.getElementById("a1")
+document.getElementById("a2")
+document.getElementById("a3")
+document.getElementById("a4")
+		document.getElementById("a5")
+	
+        }        
+          </script>
+          
+          
+          
+          <body>
+            <div class="cool">
+              <div>
+		    <p>Vul hier het juiste woord in</p>
+		    <br></br>
+    <div id="top">
+        <span id="a1"></span>
+        &nbsp;&nbsp;&nbsp;
+        <span id="a2"></span>
+        &nbsp;&nbsp;&nbsp;
+        <span id="a3"></span>
+        &nbsp;&nbsp;&nbsp;
+        <span id="a4"></span>
+	&nbsp;&nbsp;&nbsp;
+	<span id="a5"></span>
+    </div>
+              
+              
+              <div id="bottom" style="text-align:center;>
+		<h1 style="font-family:Balsamiq Sans; font-size:32; text-align:center; top: 25%;">Dit antwoord klopt</h1>
+			   <h2 style="font: Balsamiq Sans; font-size:20; text-align: center; top 32%;"><i>Weet u nu waar u heen moet?</i></h2>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    </body>
+                                                                                    </html>

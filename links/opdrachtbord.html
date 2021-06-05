@@ -36,63 +36,27 @@
     transform:translate(-50%,-50%);
 }
             
-            .span{
-    font-weight:bolder;
-    font-size:3em;
-    line-space:2em;
-    color:white;
-    opacity:1;
-    height: 20px;
-              width: 20px;
-              border-type: solid;
-              border-radius: 5px;
+           .box{
+	height: 30px;
+		   width: 200px;
+		   border-style:solid;
+		   border-color:black;
+		   left:50%;
                   }
             
-            .a{
-text-decoration:none;
-font-weight:bolder;
-font-size:1em;
-		    height: 20px;
-              width: 20px;
-              border-type: solid;
-              border-radius: 5px;
-}
+          
           </style>
           
-          <script>
-		    
-
-
-//function that evaluates the digit and return result
-
-            function solve()
-
-            {
-
-                let x = document.getElementById("result").value
-
-                let y = eval(x)
-
-                document.getElementById("result").value = y
-                
-
- 
- if (y== "ROMTE"||y=="romte"||y=="Romte"){
-     h = document.getElementById("bottom")
-     h.style.display="block"
- }            
-                
-        else{
-            alert("Dit is fout. Kloppen alle antwoorden en de volgorde? ")
-            document.getElementById("result").value = ""
-            
-document.getElementById("a1")
-document.getElementById("a2")
-document.getElementById("a3")
-document.getElementById("a4")
-		document.getElementById("a5")
-	
-        }        
+         <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("password").value;
+        if (password == "Romte"|| password =="romte"|| password =="ROMTE") {
+           window.open("https://escaperoomhveenapgen.github.io/links/opdrachtbord2.html");        
+        return true;
+    }
+	    alert("Dit is niet het juiste woord. Kijk nog eens naar de antwoorden en de volgorde");
+            return false;
+    }
           </script>
           
           
@@ -103,23 +67,12 @@ document.getElementById("a4")
 		    <p>Vul hier het juiste woord in</p>
 		    <br></br>
     <div id="top">
-        <span id="a1"></span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a2"></span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a3"></span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a4"></span>
-	&nbsp;&nbsp;&nbsp;
-	<span id="a5"></span>
+	    <div class="box" id="password"> </div>
     </div>
               
-              <button onclick="solve()"><b>Controleer</b></button>
+              <button onclick="Validate()"><b>Controleer</b></button>
 		    
-              <div id="bottom" style="text-align:center;>
-		<h1 style="font-family:Balsamiq Sans; font-size:32; text-align:center; top: 25%;">Dit antwoord klopt</h1>
-			   <h2 style="font: Balsamiq Sans; font-size:20; text-align: center; top 32%;"><i>Weet u nu waar u heen moet?</i></h2>
-                                                                                    </div>
+             
                                                                                     </div>
                                                                                     </body>
                                                                                     </html>

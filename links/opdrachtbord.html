@@ -36,21 +36,52 @@
     transform:translate(-50%,-50%);
 }
             
-           .box{
+           .box1{
 	height: 30px;
-		   width: 200px;
+		   width: 30px;
 		   border-style:solid;
 		   border-color:black;
-		   left:50%;
+		   left:15%;
                   }
             
+		  .box2{
+	height: 30px;
+		   width: 30px;
+		   border-style:solid;
+		   border-color:black;
+		   left:25%;
+                  }
           
+		  .box3{
+	height: 30px;
+		   width: 30px;
+		   border-style:solid;
+		   border-color:black;
+		   left:35%;
+                  }
+		  
+		  .box4{
+	height: 30px;
+		   width: 30px;
+		   border-style:solid;
+		   border-color:black;
+		   left:45%;
+                  }
+		  .box5{
+	height: 30px;
+		   width: 30px;
+		   border-style:solid;
+		   border-color:black;
+		   left:55%;
+                  }
+		  
           </style>
           
          <script type="text/javascript">
     function Validate() {
-        var password = document.getElementById("password").value;
-        if (password == "Romte"|| password =="romte"|| password =="ROMTE") {
+        var password = document.getElementById("password").value; var password2 == document.getElementById("password2").value; var password3 == document.getElementById("password3").value;
+	    var password4 = document.getElementById("password4").value; var password5 = document.getElementById("password5").value;
+        if ((password == "R"|| password == "r" )&& (password2 == "O" || password2 =="o") && (password3 =="M" || password3 =="m") && (password4 =="T" || password4 =="t") && (password5 =="E" || password5 =="e")) {
            window.open("https://escaperoomhveenapgen.github.io/links/opdrachtbord2.html");        
         return true;
     }
@@ -66,11 +97,18 @@
               <div>
 		    <p>Vul hier het juiste woord in</p>
 		    <br></br>
-    <div id="top">
-	    <div class="box" id="password"> </div>
+    <div>
+	    <form onsubmit ="Validate()">
+		  
+		    <td> Enter Password </td>  
+<input type = "password" id = "password" value = ""><<input type = "password" id = "password2" value = ""><input type = "password" id = "password3" value = ""><input type = "password" id = "password4" value = ""><input type = "password" id = "password5" value = "">   
+ <br><br>  
+  
+<!-- Click to verify valid password -->  
+<input type = "submit" value = "Submit">  
     </div>
               
-              <button onclick="Validate()"><b>Controleer</b></button>
+              
 		    
              
                                                                                     </div>

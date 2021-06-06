@@ -1,0 +1,338 @@
+<!DOCTYPE html> 
+   <html>            
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>EHBO ruimte</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+          <style>
+            * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+          </style>
+          <script>
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+          </script>
+     </head>
+     <body>
+       <div class="cool">
+         <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 31</div>
+    <img src="images/tijd/eindbericht.jpg" style="width:100%">
+    <div class="text">You Did It!</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 31</div>
+    <img src="images/tijd/foto1.jpg" style="width:100%">
+    <div class="text">Gebouw Apgen Voor 2005</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 31</div>
+    <img src="images/tijd/foto2.jpg" style="width:100%">
+    <div class="text">Gemeenschap Scherpenzeel</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 31</div>
+    <img src="images/tijd/foto3.jpg" style="width:100%">
+    <div class="text">Zangers Rotsterhaule ~ 1950-1960</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">5 / 31</div>
+    <img src="images/tijd/foto4.jpg" style="width:100%">
+    <div class="text">Jeugd Rotsterhaule ~1940-1950</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">6 / 31</div>
+    <img src="images/tijd/foto5.jpg" style="width:100%">
+    <div class="text">Eere zij God, Kerstfeest 1946</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">7 / 31</div>
+    <img src="images/tijd/foto6.jpg" style="width:100%">
+    <div class="text">Boek Pieter de Leur, 1986</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">8 / 31</div>
+    <img src="images/tijd/foto7.jpg" style="width:100%">
+    <div class="text">Gemeenschapsdag/BBQ 2012</div>
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">9 / 31</div>
+    <img src="images/tijd/foto8.jpg" style="width:100%">
+    <div class="text">Nieuwsbrief Heerenveen 2001 (voorloper Nijsbrief)</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">10 / 31</div>
+    <img src="images/tijd/foto9.jpg" style="width:100%">
+    <div class="text">Kerstcantate 1956</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">11 / 31</div>
+    <img src="images/tijd/foto10.jpg" style="width:100%">
+    <div class="text">Repetitie Kerstmusical 2003</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">12 / 31</div>
+    <img src="images/tijd/foto11.jpg" style="width:100%">
+    <div class="text">Oud Zangkoorboek </div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">13 / 31</div>
+    <img src="images/tijd/foto12.jpg" style="width:100%">
+    <div class="text">Jongste jeugd 2012</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">14 / 31</div>
+    <img src="images/tijd/foto13.jpg" style="width:100%">
+    <div class="text">Nieuwjaarstoast 2016</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">15 / 31</div>
+    <img src="images/tijd/foto14.jpg" style="width:100%">
+    <div class="text">Alternatieve schoonmaakmethoden met kerst</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">16 / 31</div>
+    <img src="images/tijd/foto15.jpg" style="width:100%">
+    <div class="text">Verjaardagscadeau Voorganger 2013, gemaakt door de 1e kring</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">17 / 31</div>
+    <img src="images/tijd/foto16.jpg" style="width:100%">
+    <div class="text">Br. P. de Leur in zijn atelier</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">18 / 31</div>
+    <img src="images/tijd/foto17.jpg" style="width:100%">
+    <div class="text">Boek: Geschiedenis van Het Apostolisch Genootschap in Heerenveen.</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">19 / 31</div>
+    <img src="images/tijd/foto18.jpg" style="width:100%">
+    <div class="text">Ouderencontactmiddag 2005</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">20 / 31</div>
+    <img src="images/tijd/foto19.jpg" style="width:100%">
+    <div class="text">Relaxen tijdens de Fancy Fair 2004</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">21 / 31</div>
+    <img src="images/tijd/foto20.jpg" style="width:100%">
+    <div class="text">Kerstcantate 1948</div>
+  </div>
+  
+    <div class="mySlides fade">
+    <div class="numbertext">22 / 31</div>
+    <img src="images/tijd/foto21.jpg" style="width:100%">
+    <div class="text">Fancy Fair 2004</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">23 / 31</div>
+    <img src="images/tijd/foto22.jpg" style="width:100%">
+    <div class="text">Kerstmusical 2010</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">24 / 31</div>
+    <img src="images/tijd/foto23.jpg" style="width:100%">
+    <div class="text">Cartoon Zr. D. Meester</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">25 / 31</div>
+    <img src="images/tijd/foto24.jpg" style="width:100%">
+    <div class="text">Cartoon Zr. D. Meester</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">26 / 31</div>
+    <img src="images/tijd/foto25.jpg" style="width:100%">
+    <div class="text">Kerstmuxical 2012</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">27 / 31</div>
+    <img src="images/tijd/foto26.jpg" style="width:100%">
+    <div class="text">Uitgaansdag 2007</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">28 / 31</div>
+    <img src="images/tijd/foto27.jpg" style="width:100%">
+    <div class="text">Gemeenschapsfoto Heerenveen </div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">29 / 31</div>
+    <img src="images/tijd/foto28.jpg" style="width:100%">
+    <div class="text">Nijsbrief 2003</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">30 / 31</div>
+    <img src="images/tijd/foto29.jpg" style="width:100%">
+    <div class="text">Aandenken muziekweekend 2010</div>
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">31 / 31</div>
+    <img src="images/tijd/eindbericht2.jpg" style="width:100%">
+    <div class="text">Het EINDE</div>
+  </div>
+  
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>

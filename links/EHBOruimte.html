@@ -5,6 +5,69 @@
           <title>EHBO ruimte</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
           
+           <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+           .exp3{visibility: hidden;}
+              .exp4{visibility: hidden;}
+              
+              .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+           </style>
+           
+           <script>
+			function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		</script>
+           
+           
      </head>
      <body>
      <div class="image">
@@ -19,5 +82,42 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/gang3.html'" type="button" class="woop">
          Terug naar de gang</button>
         </div>
+        <br>
+        
+        <div class="row">
+        <div class="column" style="text-align:center">
+           <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Heeft u al gekeken in de bakjes aan de linkerkant van de ruimte?</p>
+             </div>
+           
+           <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and"> De uitkomst van de som is nodig om de deur te openen.</p>
+             </div>
+           
+              <button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
+    <p class="and"> De nijptang is €12,65; probeer de rest van de som op te lossen</p>
+             </div>
+           
+           <button class="woop" onclick="unhide3()">Hint 4</button>
+           <div class="exp3">
+    <p class="and"> Klik op de link om te zien welk gereedschap bij de som hoort.</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/allehintsehbo.html" target="_blank">Klik hier</a>
+             </div>
+           
+           </div>
+        <div class="column" style="text-align:center"> 
+           
+            <button class="woop" onclick="unhide4()"> Uitkomst</button>
+           <div class="exp4">
+    <p class="and"> Klik op de link om de uitkomst te zien. Gebruik de uitkomst om de deur te openen.</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/uitkomstehbo.html" target="_blank">Klik hier</a>
+             </div>
+           </div>
+        </div>
+        </div>
+           
      </body>
 </html>

@@ -52,6 +52,13 @@
 		   .exp2{visibility: hidden;}	
 		     .exp3{visibility: hidden;}
 		   .exp4{visibility: hidden;}
+		   .exp5{visibility: hidden;}
+		   .exp6{visibility: hidden;}
+		   .exp7{visibility: hidden;}
+		   .exp8{visibility: hidden;}
+		   .exp9{visibility: hidden;}
+		   
+		   
 		   p{font-family: 'Benne';}
 		</style>
         
@@ -160,6 +167,56 @@ function ValidatePassword2() {
 }       
          </script>
 		
+		<script>
+         function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script>
+		
+		<script>
+         function unhide6() {
+    var hid = document.getElementsByClassName("exp6");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script>
+		
+		<script>
+         function unhide7() {
+    var hid = document.getElementsByClassName("exp7");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script>
+		
+		<script>
+         function unhide8() {
+    var hid = document.getElementsByClassName("exp8");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script>
+		
+		<script>
+         function unhide9() {
+    var hid = document.getElementsByClassName("exp9");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script>
+		
             </head>
      
           <body>
@@ -189,11 +246,25 @@ function ValidatePassword2() {
 		   K = 5, Z = 20, T = 14, E = 25, H = 2, R = 12.</p>
              </div>
 			  
-			<button class="woop" onclick="unhide3()">Hint 1 Deur Jongste Jeugd</button>
+			<button class="woop" onclick="unhide3()">Hint Deur Jongste Jeugd</button>
            <div class="exp3">
 		   <p class="and"> Het laatste woord van de brief in code: <b>13 15 23 23 25 13</b></p>
              </div>
+			
+			  <button class="woop" onclick="unhide5()">Hint 1 Mededelingenbord</button>
+           <div class="exp5">
+		   <p class="and"> Het woord was ingevuld moet worden is 5 letters lang</p>
+             </div>
 			  
+			  <button class="woop" onclick="unhide6()">Hint 2 Mededelingenbord</button>
+           <div class="exp6">
+		   <p class="and"> De eerste letter is <b>R</b></p>
+             </div>
+			
+			  <button class="woop" onclick="unhide6()">Hint Leestafel </button>
+           <div class="exp8">
+		   <p class="and"> Let goed op het onderstreepte woord!</p>
+             </div>
 			  
 		    </div>
 		       
@@ -210,6 +281,17 @@ function ValidatePassword2() {
 	  <button class="woop" onclick="unhide4()">Uitkomst Deur Jongste Jeugd</button>
            <div class="exp4">
 		   <p class="and"> succes </p>
+             </div>
+	  
+	  
+	    <button class="woop" onclick="unhide7()">Uitkomst Mededelingenbord</button>
+           <div class="exp7">
+		   <p class="and"> Romte </p>
+             </div>
+	  
+	  <button class="woop" onclick="unhide9()">Uitkomst Leestafel</button>
+           <div class="exp9">
+		   <p class="and"> Nijsbrief </p>
              </div>
 		       </div>
 </div>

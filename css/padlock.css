@@ -5,7 +5,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background: #2a3546;
-	min-height: 100vh;
+	min-height: 80vh;
 }
 #indicator {
 	border: 2px solid #070707;
@@ -28,7 +28,7 @@ body {
 #indicator svg {
 	padding: 16px;
 	position: absolute;
-	top: 30%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	transition: transform 0.25s ease;
@@ -70,7 +70,7 @@ body {
 }
 .increment img, .decrement img {
 	position: absolute;
-	top: 30%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 24px;

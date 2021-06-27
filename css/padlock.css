@@ -28,7 +28,7 @@ body {
 #indicator svg {
 	padding: 16px;
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	transition: transform 0.25s ease;
@@ -70,7 +70,7 @@ body {
 }
 .increment img, .decrement img {
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 24px;

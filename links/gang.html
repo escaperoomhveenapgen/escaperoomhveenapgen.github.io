@@ -5,6 +5,24 @@
           <title>Gang van het gebouw</title>
          <link rel="stylesheet" type="text/css" href="/css/gebouw.css">
 
+           <style>
+              .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+              
+              .exp{visibility: hidden;}
+			
+		</style>
+        
+           
             <script type="text/javascript">
 function ValidatePasscode() {
  
@@ -37,7 +55,7 @@ function ValidatePasscode2() {
  
  var passcode2 = prompt("Wat is de uitkomst van de puzzel in de kunstbijzaal? ", "");
  
- if (passcode2 =="romte" || passcode2 == "Romte" || passcode2 == "Romte") { 
+ if (passcode2 =="romte" || passcode2 == "Romte" || passcode2 == "ROMTE") { 
   window.location ="https://escaperoomhveenapgen.github.io/links/mededelingenbord.html";
   return true;
  }
@@ -58,7 +76,16 @@ function ValidatePassword2() {
 } 
  
 </script>
-           
+           				
+		    <script>
+         function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script>
             </head>
      
           <body>
@@ -70,6 +97,25 @@ function ValidatePassword2() {
                <a href="https://escaperoomhveenapgen.github.io/links/mededelingenbord.html"  style="top: 42%; left: 49%; width: 16%; height: 26%;" onclick="return ValidatePasscode2();"></a>
                <a href="https://escaperoomhveenapgen.github.io/links/leestafel.html" style="top: 55%; left: 85%; width: 14%; height: 11%;" onclick="return ValidatePassword2();"></a>
           
-            </div>                              
+            </div>   
+             
+             <div> 
+                
+               <div class="row">
+                  <div class="column" style="text-align:center">
+                     <p> Hier vindt u hints voor de gang</p>
+           <button class="woop" onclick="unhide()">Hint 1 Brief</button>
+           <div class="exp">
+    <p class="and">Heeft u gekeken bij de verhalen op de blog?</p>
+             </div>
+     <br>
+		    </div>
+  <div class="column">
+     <p> Als u er echt niet uitkomt, kunt u hier de uitkomsten vinden</p>
+                  </div>
+</div>
+                
+             </div>
+		   </div
           </body>
           <html>

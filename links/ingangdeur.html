@@ -40,9 +40,20 @@
   position: absolute;
 bottom: 25px;
 }
+		  
+		     .exp{visibility: hidden;}
+		  
 		</style>
 
-		
+		<script>
+			function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		</script>
 		
         </head>
      
@@ -155,6 +166,11 @@ bottom: 25px;
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/kast1.html'" type="button" class="woop" style="bottom: 50px">
          Terug naar de kastdeur</button>
 		</div>
+			
+			 <button class="woop" onclick="unhide()">Hint</button>
+           <div class="exp">
+    <p class="and">Gebruik de puzzel op het schoolbord en de hints verspreid door de jongste jeugd!</p>
+             </div>
 		</div>
 	    	     
 	      

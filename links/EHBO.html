@@ -4,6 +4,11 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Deur van EHBO ruimte</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+           
+           <style>
+              .exp{visibility: hidden;}
+           </style>
+           
 <script type="text/javascript">
 function ValidatePassword() {
 
@@ -16,6 +21,17 @@ function ValidatePassword() {
   alert('Dit is fout');return false;
 }
 </script>
+           
+           <script>
+			function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		</script>
+           
             </head>
      
           <body>
@@ -28,5 +44,11 @@ function ValidatePassword() {
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/gang.html'" type="button" class="woop">
          Terug naar de gang</button>
         </div>
+             
+              <button class="woop" onclick="unhide()">Hint</button>
+           <div class="exp">
+    <p class="and">Er werd een kleur genoemd in 1 van de hints in de jongste jeugd</p>
+             </div>
+             
       </body>
 </html>

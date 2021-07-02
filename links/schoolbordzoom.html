@@ -43,7 +43,7 @@
 		   .exp2{visibility: hidden;}	
              .exp3{visibility: hidden;}	
 		   .exp4{visibility: hidden;}
-		     		   
+		     		   .exp5{visibility: hidden;}
 		   
 		   p{font-family: 'Benne';}
 		</style>
@@ -91,6 +91,16 @@
             <script>
          function unhide4() {
     var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+         </script> 
+		
+		 <script>
+         function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
     // Emulates jQuery $(element).is(':hidden');
     if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";
@@ -154,6 +164,12 @@
               <a href="https://escaperoomhveenapgen.github.io/links/allehintsjj.html" target="_blank">Klik hier</a>
              </div>
            
+		 <button class="woop" onclick="unhide5()">Wie is wie?</button>
+           <div class="exp5">
+    <p class="and">Klik hier om naar de pagina te gaan met alle namen:</p>
+		   <a href="https://escaperoomhveenapgen.github.io/links/allenamen.html" target="_blank">Klik hier</a>
+             </div>
+		
            <button class="woop" onclick="unhide4()">Uitkomst</button>
            <div class="exp4">
     <p class="and">Deze link laat zien wat de uitkomst is van de puzzel!</p>

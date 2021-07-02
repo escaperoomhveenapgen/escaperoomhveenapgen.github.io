@@ -5,11 +5,31 @@
           <title>EHBO koffer</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
           
+           <style>
+                            .exp{visibility: hidden;}
+           </style>
+           
+           <script>
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+           </script>
+           
      </head>
      <body>
        <div class="image">
          <img src="/images/Koffer.jpg" alt="Bericht voor in de koffer" width="100%" />
        </div>
+        
+         <button class="woop" onclick="unhide()">Hint</button>
+           <div class="exp">
+              <p class="and"><u>H</u>aakjes, <u>W</u>ortels, <u>M</u>achten, <u>V</u>ermenigvuldigen, <u>D</u>elen, <u>O</u>ptellen, en <u>A</u>ftrekken</p>
+             </div>
+        
         <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/EHBOruimte.html'" type="button" class="woop">
          Terug naar de EHBO ruimte</button>

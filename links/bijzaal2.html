@@ -5,6 +5,30 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Kunstbijzaal</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+           
+           <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+           </style>
+           
+           <script>
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+               function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+           </script>
+           
      </head>
      
               <body>
@@ -18,9 +42,28 @@
 
 
                  </div>
+                 
                   <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/EHBOruimte.html'" type="button" class="woop">
          Terug naar de EHBO ruimte</button>
         </div>
+                 
+                 <div style="text-align:center">
+               <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">De puzzel is verdeeld in vijf delen. De uitkomst kan ingevuld worden op het bord in de andere bijzaal</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/opdrachtbord.html" target="_blank">Vul hier de uitkomst in</a>
+             </div>  
+                    
+                     <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">Twee onderdelen zijn te vinden in de 1e bijzaal, en drie onderdelen zijn te vinden in de 2e bijzaal.</p>
+                </div>  
+                    
+                    
+                    
+                 </div>
+                 
+                 
      </body>
 </html>

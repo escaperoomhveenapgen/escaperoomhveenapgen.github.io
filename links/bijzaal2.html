@@ -9,6 +9,8 @@
            <style>
               .exp{visibility: hidden;}
               .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+               .exp3{visibility: hidden;}
            </style>
            
            <script>
@@ -22,6 +24,22 @@
               
                function unhide1() {
     var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+              
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+              
+                 function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
     // Emulates jQuery $(element).is(':hidden');
     if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";
@@ -47,7 +65,8 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/EHBOruimte.html'" type="button" class="woop">
          Terug naar de EHBO ruimte</button>
         </div>
-                 
+                 <br>
+      <br>
                  <div style="text-align:center">
                <button class="woop" onclick="unhide()">Hint 1</button>
            <div class="exp">
@@ -60,6 +79,20 @@
     <p class="and">Twee onderdelen zijn te vinden in de 1e bijzaal, en drie onderdelen zijn te vinden in de 2e bijzaal.</p>
                 </div>  
                     
+                     <button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
+    <p class="and">Alle antwoorden zijn te vinden tussen de verhalen op de blog! Volg de links hieronder om naar ieders verhaal terug te gaan!</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/bjorn.html" target="_blank">Björn</a>
+                            <a href="https://escaperoomhveenapgen.github.io/links/jesperre.html" target="_blank">Jesperre</a>
+              <a href="https://escaperoomhveenapgen.github.io/links/jordy.html" target="_blank">Jordy</a>
+              <a href="https://escaperoomhveenapgen.github.io/links/jasmijn.html" target="_blank">Jasmijn</a>
+                </div> 
+                                        
+                     <button class="woop" onclick="unhide3()">Uitkomst</button>
+           <div class="exp3">
+    <p class="and">Voor de uitkomst van de puzzel en de verschillende onderdelen kunt u klikken op de onderstaande link.</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/uitkomstbijzaal.html" target="_blank">Klik hier</a>
+                </div>  
                     
                     
                  </div>

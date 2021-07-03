@@ -11,6 +11,7 @@
               .exp1{visibility: hidden;}
               .exp2{visibility: hidden;}
                .exp3{visibility: hidden;}
+              .exp4{visibility: hidden;}
            </style>
            
            <script>
@@ -40,6 +41,14 @@
               
                  function unhide3() {
     var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
+              
+               function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
     // Emulates jQuery $(element).is(':hidden');
     if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";
@@ -87,7 +96,13 @@
               <a href="https://escaperoomhveenapgen.github.io/links/jordy.html" target="_blank">Jordy</a>
               <a href="https://escaperoomhveenapgen.github.io/links/jasmijn.html" target="_blank">Jasmijn</a>
                 </div> 
-                                        
+                      
+                     <button class="woop" onclick="unhide4()">Hint 4</button>
+           <div class="exp4">
+    <p class="and">Voor de locatie van alle onderdelen, klik op de onderstaande link:</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/allehintsbijzaal.html" target="_blank">Klik hier</a>
+                </div>  
+                    
                      <button class="woop" onclick="unhide3()">Uitkomst</button>
            <div class="exp3">
     <p class="and">Voor de uitkomst van de puzzel en de verschillende onderdelen kunt u klikken op de onderstaande link.</p>

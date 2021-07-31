@@ -44,6 +44,14 @@
         hid[0].style.visibility = "visible";
     }
 }       
+		 function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}       
+		 
          </script>
         </head>
 
@@ -62,11 +70,17 @@
                  
        <div class="article">
             <div class="card">
-           <p> Heeft u een hint nodig? Klik dan op de onderstaande knop </p>
+           <p> Heeft u een hint nodig?</p>
            <button class="woop" onclick="unhide()">Hint</button>
            <div class="exp">
-    <p class="and">Lees eerst alle verhalen om verder te komen.</p>
+    <p class="and">Gebruik de QR-code om de locatie te ontdekken, waar je nu heen moet?</p>
              </div>
+		    
+		     <button class="woop" onclick="unhide1()">Hint</button>
+           <div class="exp1">
+    <p class="and">De verhalen worden pas gebruikt bj de volgende puzzel. </p>
+             </div>
+		    
           </div
         </div>
           </section>

@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+   <html> 
+      
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Ingang</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+          
+          <script type="text/javascript">
+function ValidatePassword() {
+
+  var password = prompt("Welk woord hoort niet thuis in de brief?", "");
+
+  if (password == "rood"|| password == "aardbei" || password =="Aardbei" || password == "AARDBEI") {
+        window.location ="https://escaperoomhveenapgen.github.io/links/gang.html";
+     return true;
+  }
+  alert('Dit is fout, kijk nog eens goed naar de brief!');return false;
+}
+</script>
+          
+     </head>
+     
+              <body>
+       <div class="image" style="text-align:center">
+         <img src="/images/ingang.jpg" alt="Ingang" width="100%">
+         <a href="https://escaperoomhveenapgen.github.io/links/gang.html" style="top: 13.9%; left: 47.5%; width: 17.9%; height: 69.4%;" onclick="return ValidatePassword();"></a>
+         <a href="https://escaperoomhveenapgen.github.io/links/nieuwebrief.html" style="top: 27.2%; left: 34.4%; width: 10%; height: 20.4%;" target="_blank"></a>
+          <a href="javascript: alert('Regent het buiten?')" style="top: 65.4%; left: 20.3%; width: 9%; height: 34%;"></a>
+
+                                                            
+
+                </div>
+     </body>
+</html> 

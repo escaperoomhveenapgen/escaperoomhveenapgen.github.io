@@ -1,5 +1,5 @@
 var combinationLock = {
-	combination: 7025,
+	combination: 1966,
 	locked: true,
 	wheels: [0, 0, 0, 0],
 	increment: function(wheel) {

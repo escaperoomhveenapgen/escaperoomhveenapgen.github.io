@@ -66,26 +66,26 @@
             <script type="text/javascript">
 function ValidatePasscode() {
  
- var passcode = prompt("Wat is het laatste woord van de brief?", "");
+ var passcode = prompt("Welk nummer heeft een voicemail achtergelaten op de mobiel?", "");
  
- if (passcode =="Succes!" || passcode == "Succes" || passcode == "succes" || passcode == "succes!" || passcode == "SUCCES" || passcode == "SUCCES!") { 
+ if (passcode =="+31 6 19283746" || passcode == "+31619283746" || passcode == "+316 19283746" || passcode == "+31 619283746" || passcode == "06 19283746" || passcode == "0619283746") { 
   window.location ="https://escaperoomhveenapgen.github.io/links/jongstejeugd.html";
   return true;
  }
- alert('Kijk nog eens goed naar de brief en de hints'); return false;
+ alert('Kijk nog eens goed naar de telefoon. Het nummer mag ook met 06.. aangegeven worden. '); return false;
 } 
  
 </script>
            <script type="text/javascript">
 function ValidatePassword() {
  
- var password = prompt("Welke kleur strikje werd er genoemd in 1 van de hints in de jongste jeugd? ", "");
+ var password = prompt("Wat is de code die verkregen is uit de grote zaal?", "");
  
- if (password =="rood" || password == "Rood" || password == "ROOD") { 
-  window.location ="https://escaperoomhveenapgen.github.io/links/gang3.html";
+ if (password =="290721" || password == "292107" || password == "210729"|| password == "212907" || password == "072129"|| password == "072921" || ) { 
+  window.location ="https://escaperoomhveenapgen.github.io/links/bingotafel.html";
   return true;
  }
- alert('Kijk nog eens goed naar de hints in de jongste jeugd'); return false;
+ alert('Heeft u de puzzels al gedaan in de grote zaal? Zorg ervoor dat er geen spaties tussen de cijfers zitten?'); return false;
 } 
  
 </script>
@@ -222,7 +222,7 @@ function ValidatePassword2() {
           <body>
             <div class="image">
                <img src="/images/gang_2.jpg" alt="gang" width="100%" />
-        <a href="/images/Brief (2).jpg" style="top: 83%; left: 32%; width: 7%; height: 8%;" target="popup" onclick="window.open('/images/Brief (2).jpg','popup','width=600px,height=1200px'); return false;"></a>
+        <a href="https://escaperoomhveenapgen.github.io/links/bingotafel.html" style="top: 83%; left: 32%; width: 7%; height: 8%;" onclick="return ValidatePassword();"></a>
                <a href="https://escaperoomhveenapgen.github.io/links/jongstejeugd.html" style="top: 42%; left: 29%; width: 6.2%; height: 23.6%;" onclick="return ValidatePasscode();"></a>
               <a href="https://escaperoomhveenapgen.github.io/links/gang3.html" style="top: 41%; left: 71%; width: 4%; height: 18%;" ></a>
                <a href="https://escaperoomhveenapgen.github.io/links/mededelingenbord.html"  style="top: 42%; left: 49%; width: 16%; height: 26%;" onclick="return ValidatePasscode2();"></a>
@@ -235,20 +235,19 @@ function ValidatePassword2() {
                <div class="row">
                   <div class="column" style="text-align:center">
                      <p> Hier vindt u hints voor de gang</p>
-           <button class="woop" onclick="unhide()">Hint 1 Brief</button>
+           <button class="woop" onclick="unhide()">Hint 1 Jongste Jeugd</button>
            <div class="exp">
-    <p class="and">Heeft u gekeken bij de verhalen op de blog?</p>
+    <p class="and">Bent u al bij de leestafel geweest?</p>
              </div>
      
-			   <button class="woop" onclick="unhide1()">Hint 2 Brief</button>
+			   <button class="woop" onclick="unhide1()">Hint 2 JJ</button>
            <div class="exp1">
-    <p class="and">S = 13, A = 21, M = 7, O = 9, V = 16, I = 3,
-		   K = 5, Z = 20, T = 14, E = 25, H = 2, R = 12.</p>
+    <p class="and">Als de telefoon geopend is, kijk bij de ongelezen berichten!</p>
              </div>
 			  
-			<button class="woop" onclick="unhide3()">Hint Deur Jongste Jeugd</button>
+			<button class="woop" onclick="unhide3()">Hint Tafel</button>
            <div class="exp3">
-		   <p class="and"> Het laatste woord van de brief in code: <b>13 15 23 23 25 13</b></p>
+		   <p class="and">Er is een 6-cijferige code verkregen uit de puzzels in de grote zaal.</p>
              </div>
 			
 			  <button class="woop" onclick="unhide5()">Hint 1 Mededelingenbord</button>
@@ -263,7 +262,7 @@ function ValidatePassword2() {
 			
 			  <button class="woop" onclick="unhide8()">Hint Leestafel </button>
            <div class="exp8">
-		   <p class="and"> Let goed op de laatste zin in de mededelingen!</p>
+		   <p class="and"> Let goed op de laatste mededeling in de mededelingen op het bord!</p>
              </div>
 			  
 		    </div>
@@ -272,18 +271,12 @@ function ValidatePassword2() {
   <div class="column" style="text-align:center">
      <p> Als u er echt niet uitkomt, kunt u hier de uitkomsten vinden</p>
                
-	  <button class="woop" onclick="unhide2()">Uitkomst Brief</button>
+	  <button class="woop" onclick="unhide2()">Uitkomst deur Jongeste Jeugd</button>
            <div class="exp2">
-    <p class="and">U moet naar de zaal waar de kleinsten van het gebouw samenkomen: De Jongste Jeugd.
-		   Laatste woord van de brief is "succes". </p>
+    <p class="and">Het telefoonnummer dat gebeld heeft naar de telefoon op de leestafel = +316 19283746, of 0619283746 kan ook ingevoerd worden</p>
              </div>
 		       
-	  <button class="woop" onclick="unhide4()">Uitkomst Deur Jongste Jeugd</button>
-           <div class="exp4">
-		   <p class="and"> succes </p>
-             </div>
-	  
-	  
+	 
 	    <button class="woop" onclick="unhide7()">Uitkomst Mededelingenbord</button>
            <div class="exp7">
 		   <p class="and"> Romte </p>
@@ -293,6 +286,13 @@ function ValidatePassword2() {
            <div class="exp9">
 		   <p class="and"> Nijsbrief </p>
              </div>
+	  
+	  <button class="woop" onclick="unhide4()">Uitkomst Bingotafel</button>
+           <div class="exp4">
+		   <p class="and"> De uitkomst van de opdrachten in de grote zaal bestaat uit 3 groepen met 2 cijfers. Voer 290721 in. </p>
+             </div>
+	  
+	  
 		       </div>
 </div>
                 

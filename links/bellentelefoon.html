@@ -33,25 +33,21 @@
 }
 
   
- body {
-    background: linear-gradient(90deg, rgba(198,198,198,1) 0%, rgba(150,150,150,1) 24%, rgba(77,77,77,1) 61%, rgba(0,0,0,1) 100%);
-			       
-}
+
 
 #top{
     position:absolute ;
-    top:15%;
+    top:20%;
     left:50%;
     transform:translate(-50%,-50%);
 }
 
 span{
     font-weight:bolder;
-    font-size:3em;
-    line-space:2em;
-    color:black;
-    opacity:0.7;
-	
+    font-size:1em;
+    line-space:1em;
+    color:white;
+    	
 }
 
 table{
@@ -122,6 +118,7 @@ a{
 text-decoration:none;
 font-weight:bolder;
 font-size:1em;
+	color:white;
 }
 
 tr:nth-child(6){
@@ -238,7 +235,7 @@ function change(){
   background-size: cover;">
     
 	    <div>
-		    <p>Inlogscherm</p>
+		   
 		    <br></br>
     <div id="top">
         <span id="a1">.</span>
@@ -267,23 +264,23 @@ function change(){
     <input type="hidden" maxlength="10" id="result"/>
         <table border="0">
             <tr onclick="change()">
-                <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('1')">1</button></td>
-                <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('2')">2</button></td>
-                <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('3')">3</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('1')">1</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('2')">2</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('3')">3</button></td>
             </tr>
             <tr onclick="change()">
-                <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('4')">4</button></td>
-                <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('5')">5</button></td>
-                <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('6')">6</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('4')">4</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('5')">5</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('6')">6</button></td>
             </tr>
             <tr onclick="change()">
-            <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('7')">7</button></td>
-            <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('8')">8</button></td>
-            <td style="border-radius:50%; border:1px solid black;"><button onclick="dis('9')">9</button></td>
+            <td style="border:1px solid black;"><button onclick="dis('7')">7</button></td>
+            <td style="border:1px solid black;"><button onclick="dis('8')">8</button></td>
+            <td style="border:1px solid black;"><button onclick="dis('9')">9</button></td>
             </tr>
             <tr>
                 <td><button></button></td>
-                <td style="border-radius:75%; border:1px solid black;"><button onclick="dis('0'); change();">0</button></td>
+                <td style="border:1px solid black;"><button onclick="dis('0'); change();">0</button></td>
                 <td><button></button></td>
             </tr>
             <tr>
@@ -291,7 +288,7 @@ function change(){
             </tr>
             <tr style="height:15px;">
             <td></td>
-		    <td style="font-size: 15px;"><button onclick="solve()"><b>Bellen</b></button></td>
+		    <td style="font-size: 12px;"><button onclick="solve()"><b>Bellen</b></button></td>
             <td></td>
             </tr>
 		
@@ -303,19 +300,10 @@ function change(){
             <td style="
 	background-color:#;
 	border-radius:6px;
-	border:2px solid #dcdcdc; text-align:center;"><a href="https://escaperoomhveenapgen.github.io/links/telefoonscherm.html" style="color: black;">TERUG</a></td>
+	border:2px solid #dcdcdc; text-align:center;"><a href="https://escaperoomhveenapgen.github.io/links/telefoonscherm.html" style="color: black;">terug</a></td>
             <td></td>
             </tr>
         </table>
-
-
-        <div id="bottom" style="text-align:center; background:linear-gradient(90deg, rgba(198,198,198,1) 0%, rgba(150,150,150,1) 24%, rgba(77,77,77,1) 61%, rgba(0,0,0,1) 100%);">
-		<h1 style="font:Perpetua; font-size:32; text-align:center; top: 25%;">U bent nu ingelogd</h1>
-			   <h2 style="font: Perpetua; font-size:20; text-align: center; top:30%;">Laatste login:</h2>
-				<h2 style="font: Perpetua; font-size:20; text-align: center; top 32%;"><i>25-04-2021 (11:30am): Br. Henk Slavenburg</i></h2>
-
-		
-        
                
         </div>
 

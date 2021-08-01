@@ -60,7 +60,7 @@ table{
 }
 
 td{
-    width:100px;
+    width:60px;
     height:60px;
     text-align:center;
 	
@@ -81,11 +81,10 @@ button:hover{
 }
 
 #bottom{
-    width:100%;
+    width:50%;
 	height:85%;
 	top: 0%;
-    background: white;
-    position:absolute ;
+      position:absolute ;
     z-index:1;
     display:none;
 }
@@ -165,12 +164,12 @@ tr:nth-child(5){
 
  
  if (y== "0684422017"){
-     h = window.open("https://escaperoomhveenapgen.github.io/links/voicemail.html")
+     h = document.getElementById("bottom")
      h.style.display="block"
  }            
                 
         else{
-            alert("Incorrect-Password")
+            alert("Dit is niet het juiste nummer")
             document.getElementById("result").value = ""
             
 document.getElementById("a1").style.color="gray"
@@ -228,6 +227,11 @@ function change(){
                 
                 
             }
+		    
+		    function play() {
+  var audio = new Audio('https://escaperoomhveenapgen.github.io/images/geluiddienst.mp3');
+  audio.play();
+}
 	    </script>
     </head>
   
@@ -305,6 +309,11 @@ function change(){
             </tr>
         </table>
                
+
+<div class="bottom">
+	<img src="/images/geluid.jpg" style="top:50%; left: 50%; width: 20%" onClick="return play();"> 
+</div>
+	
         </div>
 
 

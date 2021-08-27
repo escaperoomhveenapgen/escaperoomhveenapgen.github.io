@@ -115,6 +115,8 @@ tr:nth-child(5){
 	<body>
 
     <div id="top">
+	    <span>+316</span>
+	    &nbsp;&nbsp;&nbsp;
         <span id="a1">.</span>
         &nbsp;&nbsp;&nbsp;
         <span id="a2">.</span>
@@ -130,12 +132,9 @@ tr:nth-child(5){
 	    <span id="a7">.</span>
         &nbsp;&nbsp;&nbsp;
 	    <span id="a8">.</span>
-        &nbsp;&nbsp;&nbsp;
-	    <span id="a9">.</span>
-        &nbsp;&nbsp;&nbsp;
-        <span id="a10">.</span>  
+         
     </div>
-    <input type="hidden" maxlength="10" id="result"/>
+    <input type="hidden" maxlength="8" id="result"/>
         <table border="0">
             <tr onclick="change()">
                 <td><button onclick="dis('1')">1</button></td>
@@ -200,7 +199,7 @@ tr:nth-child(5){
                 
 
  
- if (y== "1684422017"){
+ if (y== "84422017"){
      h = document.getElementById("bottom")
      h.style.display="block"
  }            
@@ -217,8 +216,7 @@ document.getElementById("a5").style.color="gray"
 document.getElementById("a6").style.color="gray"
 document.getElementById("a7").style.color="gray"
 document.getElementById("a8").style.color="gray"
-document.getElementById("a9").style.color="gray"
-document.getElementById("a10").style.color="gray"
+
         }        
 
             }
@@ -255,16 +253,9 @@ function change(){
 	else if ( m <= 9999999){
      document.getElementById("a7").style.color="red"
  }
-	
-	else if ( m <= 99999999){
-     document.getElementById("a8").style.color="red"
- }
-	else if ( m <= 999999999){
-     document.getElementById("a9").style.color="red"
- }
-	
+		
  else{
-     document.getElementById("a10").style.color="red"
+     document.getElementById("a8").style.color="red"
  }
                 
                 

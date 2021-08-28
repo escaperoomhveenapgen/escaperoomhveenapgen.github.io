@@ -111,10 +111,20 @@ tr:nth-child(5){
     height:20px;
 }
 	
-.playbut{ 
-	text-align:center; 
-	}
-	</style>
+
+
+	   
+	   .thebut {
+display: flex;
+justify-content: center;
+}
+
+
+playbut {
+width: 200px;
+}
+	   
+	   </style>
 
 	</head>
 	
@@ -172,7 +182,9 @@ tr:nth-child(5){
         <div id="bottom">
         <P>Gelukt!</P>
 		<p>Klik hieronder op play om de voicemail te beluisteren.</p> 
-          <img id="playbut" src="/images/playbutton.jpg" onclick="playAudio('/images/voicemail.mp3')">
+		<div class="thebut">
+          <img class="playbut" src="/images/playbutton.jpg" onclick="playAudio('/images/voicemail.mp3')">
+		</div>
         </div>
 		
 			<script>

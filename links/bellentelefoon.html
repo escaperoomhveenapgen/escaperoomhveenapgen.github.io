@@ -60,7 +60,7 @@ button:hover{
 #bottom{
     width:100%;
     height:100%;
-    background:lightgreen;
+    background:gray;
     position:absolute ;
     z-index:1;
     display:none;
@@ -166,10 +166,9 @@ tr:nth-child(5){
             </tr>
         </table>
         <div id="bottom">
-        <P>CORRECT PASSWORD</P>
-        <P>{DEVICE OPENED}</P>
-        <p> <a href="https://www.coding-greed.blogspot.com">CODING GREED</a></p>
-        <p>click above&uparrow; to visit my website!!</p>
+        <P>Gelukt!</P>
+          <input type="button" value="PLAY" onclick="play()">
+    <audio id="audio" src="/images/voicemail.mp3"></audio>
         
         </div>
 		
@@ -205,7 +204,7 @@ tr:nth-child(5){
  }            
                 
         else{
-            alert("Incorrect-Password")
+            alert("Dit klopt niet, de +316 hoeft niet ingevuld worden. Kijk nog eens goed naar de romeinse cijfers.")
             document.getElementById("result").value = ""
             
 document.getElementById("a1").style.color="white"
@@ -261,6 +260,16 @@ function change(){
                 
             }
 	</script>
+		
+<script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+
+  
+
     </body>
 </html>
 	   

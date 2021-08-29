@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+   <html>            
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Opdracht Balkon</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+          
+          <style>
+            .invoer{
+              position:absolute;
+              z-index:1;
+              top:90%;
+               left:40%;
+               text-align:center;
+            }
+          </style>
+          
+           <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "105") {
+    return true;
+   }
+   alert("Dit is fout");
+   return false;
+   }
+ </script>
+          
+     </head>
+     <body>
+     <div class="image">
+     <img src="/images/balkonpuzzel2.jpg" alt="puzzel1" width="100%">
+       </div>
+       
+       <div class="invoer">
+       <p style="text-align: center">Uitkomst:<input id="passwordBox" type="password"/></p>
+ <a class="woop" style="display:inline-block" href="https://escaperoomhveenapgen.github.io/links/opdrachtbalkon3.html" onclick="return checkPassword();">
+  Open
+ </a>
+       </div>
+        
+        <div style="text-align:center">
+           <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/balkon.html'" type="button" class="woop">
+         Terug naar het balkon</button>
+        </div>
+     
+     </body>
+</html>

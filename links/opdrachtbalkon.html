@@ -20,10 +20,10 @@
   function checkPassword() {
    var password = document.getElementById("passwordBox");
    var passwordText = password.value;
-   if(passwordText == "105") {
+   if(passwordText == "gemeente" || passwordText == "GEMEENTE" || passwordText == "Gemeente") {
     return true;
    }
-   alert("Dit is fout");
+   alert("Dit klopt niet");
    return false;
    }
  </script>

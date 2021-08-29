@@ -7,6 +7,7 @@
 		    .knop{
 			    position: absolute;
 			    z-index:1;
+			    top:20%;
 		    }
 		    
 		    nr1{
@@ -31,10 +32,10 @@
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
 var passcode = document.getElementById("passcode").value;			
-if ( username == "root" && password == "root" && passcode == "root"){ // here is password and username
-window.location = "https://escaperoomhveenapgen.github.io/links/lichtpaneelkaart.html"; {
+if ( username == "root" && password == "root" && passcode == "root"){// here is password and username
     return true;
    }
+	else
    alert("Dit klopt niet");
    return false;
    }
@@ -48,9 +49,12 @@ window.location = "https://escaperoomhveenapgen.github.io/links/lichtpaneelkaart
 	  
 	  <div class="knop">
 		  <p style="text-align: center">Uitkomst:</p>
-		  <input id="username" type="text" class="nr1"/>
-		  <input id="password" type="text" class="nr2"/>
-		  <input id="passcode" type="text" class="nr3"/>
- <a class="woop" onclick="return validate();">Open</a>
+		  <br>
+		  <input id="username" type="text" />
+		  <br>
+		  <input id="password" type="text" />
+		  <br>
+		  <input id="passcode" type="text" />
+ <button class="woop" href="https://escaperoomhveenapgen.github.io/links/lichtpaneelkaart.html" onclick="return validate();">Open</button>
   </body>
 </html>

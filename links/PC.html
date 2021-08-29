@@ -37,7 +37,30 @@
 			   z-index:1;
 		   }
 		
+		   
+		    .invoer{
+              position:absolute;
+              z-index:1;
+              top:80%;
+               left:40%;
+               text-align:center;
+               margin-top:25px;
+            }
            </style>
+		
+		
+     
+           <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "7025") {
+    return true;
+   }
+   alert("Dit klopt niet");
+   return false;
+   }
+ </script>
      </head>
      
               <body >
@@ -50,13 +73,20 @@
    <iframe class="framing" style="width: 45%; height: 73%; left: 29%; top: 10%; border-style: solid; border-width: 2px; border-color: #888" 
 	   allowFullScreen="true" src="https://www.jigsawexplorer.com/online-jigsaw-puzzle-player.html?frm=1&url=aHR0cHM6Ly9lc2NhcGVyb29taHZlZW5hcGdlbi5naXRodWIuaW8vaW1hZ2VzL3BjcHV6emVsLmpwZ18obm9fcHJldmlld180KV8obm9wPTQ4KQ~~&cred=UEMgcHV6emVsLCAyMDIx&color=white" title="Jigsaw Puzzle">Jigsaw Puzzle</iframe>
               </div>
-							       </div>
+			
+				<div class="invoer">
+       <p style="text-align: center">Uitkomst:<input id="passwordBox" type="password"/></p>
+ <a class="woop" href="https://escaperoomhveenapgen.github.io/links/pckaart.html" onclick="return checkPassword();">
+  Open
+ </a>
+		      </div>
+		      
 		      <br>
 		       <br>
 	    <br>
 	    <br> <br>
 	    <br>
-                  <div style="text-align:center top: 110%;">
+                  <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/looppad.html'" type="button" class="woop">
          Terug naar de grote zaal</button>
         </div>

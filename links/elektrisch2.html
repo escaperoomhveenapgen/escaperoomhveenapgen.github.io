@@ -3,8 +3,42 @@
     <head>
         <title>Lichtpaneel</title>
 	    <style>
+		    .knop{
+			    position: absolute;
+			    z-index:1;
+		    }
+		    
+		    nr1{
+			    left:50%;
+			    top:20%;
+		    }
+		    
+		    nr2{
+			    left:50%;
+			    top:45%;
+		    }
+		    
+		    nr3
+		    {
+			    left:50%;
+			    top:70%;
+		    }
+		    
       </style>
       <script>
+	        function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+			var password2 = document.getElementById("passwordBox2");
+   var passwordText2 = password.value;
+			var password3 = document.getElementById("passwordBox3");
+   var passwordText3 = password.value;
+   if(passwordText == "gemeente" && passwordText2 =="lavendel" && passwordText3 =="hortensia") {
+    return true;
+   }
+   alert("Dit klopt niet");
+   return false;
+   }
       </script>
   </head>
   
@@ -12,5 +46,14 @@
     <div class="image">
       <img src="/images/paneel.jpg" width="100%"/>
     </div>
+	  
+	  <div class="knop">
+		  <p style="text-align: center">Uitkomst:</p>
+		  <input id="passwordBox" type="text"/>
+		  <input id="passwordBox2" type="text"/>
+		  <input id="passwordBox3" type="text"/>
+ <a class="woop" href="https://escaperoomhveenapgen.github.io/links/opdrachtbalkon2.html" onclick="return checkPassword();">
+  Open
+ </a>
   </body>
 </html>

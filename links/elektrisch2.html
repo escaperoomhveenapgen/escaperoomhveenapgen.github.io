@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Lichtpaneel</title>
+	      <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
 	    <style>
 		    .knop{
 			    position: absolute;
@@ -26,14 +27,12 @@
 		    
       </style>
       <script>
-	        function checkPassword() {
-   var password = document.getElementById("passwordBox");
-   var passwordText = password.value;
-			var password2 = document.getElementById("passwordBox2");
-   var passwordText2 = password.value;
-			var password3 = document.getElementById("passwordBox3");
-   var passwordText3 = password.value;
-   if(passwordText == "gemeente" && passwordText2 =="lavendel" && passwordText3 =="hortensia") {
+	        function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+var passcode = document.getElementById("passcode").value;			
+if ( username == "root" && password == "root" && passcode == "root"){ // here is password and username
+window.location = "https://escaperoomhveenapgen.github.io/links/lichtpaneelkaart.html"; {
     return true;
    }
    alert("Dit klopt niet");
@@ -49,11 +48,9 @@
 	  
 	  <div class="knop">
 		  <p style="text-align: center">Uitkomst:</p>
-		  <input id="passwordBox" type="text"/>
-		  <input id="passwordBox2" type="text"/>
-		  <input id="passwordBox3" type="text"/>
- <a class="woop" href="https://escaperoomhveenapgen.github.io/links/opdrachtbalkon2.html" onclick="return checkPassword();">
-  Open
- </a>
+		  <input id="username" type="text" class="nr1"/>
+		  <input id="password" type="text" class="nr2"/>
+		  <input id="passcode" type="text" class="nr3"/>
+ <a class="woop" onclick="return validate();">Open</a>
   </body>
 </html>

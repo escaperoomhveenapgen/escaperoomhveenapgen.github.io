@@ -47,7 +47,8 @@
    var password = document.getElementById("passwordBox");
    var passwordText = password.value;
    if(passwordText == "7025") {
-    return true;
+    alert("Dit klopt! Er wordt nu een afbeelding geopend in een nieuw tabblad. Bewaar deze goed");
+	   return true;
    }
    alert("Dit klopt niet");
    return false;
@@ -68,7 +69,7 @@
 			
 				<div class="invoer">
        <p style="text-align: center">Uitkomst:<input id="passwordBox" type="password"/></p>
- <a class="woop" href="https://escaperoomhveenapgen.github.io/links/pckaart.html" onclick="return checkPassword();">
+ <a class="woop" href="https://escaperoomhveenapgen.github.io/links/pckaart.html" target="_blank" onclick="return checkPassword();">
   Open
  </a>
 		      </div>

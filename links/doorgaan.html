@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+   <html>            
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Bijna klaar</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+          <style>
+            h1{
+              font-family: Helvetica;
+              font-size: 28px;
+            }
+            h2 {
+              font-family: Helvetica;
+              font-size: 20px;
+            }
+            
+            p {
+              font-family: Helvetica;
+              font-size: 12px;
+            }
+            
+              .nr3
+		    {
+			   border: 2px solid black;
+				   border-radius: 4px;
+			    height:5%;
+		    }
+            
+          </style>
+     </head>
+     
+     <body>
+       <div style="text-align:center; top:20%; margin: 25px; border: 2px solid black;">
+         <h1>Om deze deur te openen, moet de juiste code ingevuld worden</h1>
+         <h2> Als jullie alles goed gedaan hebben, hebben jullie drie delen van iets gevonden. </h2>
+         <h2> De code die verkregen kan worden met deze drie delen maakt een zescijferige code.</h2>
+         <p><i>De volgorde van de drie cijferdelen maakt niet uit, zorg ervoor dat er geen spaties in het antwoord zitten.</i></p>
+       </div>
+            
+            <div style="text-align: center; top: 50%; margin: 25px; border: 2px solid black;">
+            <p>Uitkomst:</p>
+              <br />
+            <a class="woop" href="https://escaperoomhveenapgen.github.io/links/opendeur.html" onclick="return checkPassword();">
+  Open
+ </a>
+       </div>
+       
+         <div style="text-align:center">
+           <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/grotedeur.html'" type="button" class="woop">
+         Terug</button>
+        </div>
+       
+       <script>
+        function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "290721" || passwordText == "072921" || passwordText == "292107"|| passwordText =="072129" || passwordText == "210729" || passwordText =="212907") {
+    return true;
+   }
+   alert("Dit klopt niet, kijk eens goed naar de cijfers rechtsonder op de drie verkregen delen");
+   return false;
+   }
+       </script>
+     </body>
+</html>

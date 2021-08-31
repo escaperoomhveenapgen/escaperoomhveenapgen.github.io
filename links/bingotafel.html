@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+   <html>            
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>BINGOOOOOOO</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+          <style>
+            .exp{visibility: hidden;}
+            
+            .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+            
+            .h1{
+              font-family: 'Helvetica';
+              font-size: 32px;
+            }
+            
+            .h2{
+              font-family: 'Helvetica';
+              font-size: 24px;
+            }
+          </style>
+          
+          <script>
+            	function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+} 
+            
+             function playAudio(url) {
+  new Audio(url).play();
+}
+            
+          </script> 
+     </head>
+     
+<body style="background-image: url('/images/bingotafel.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+  <div style="text-align:center; margin: 25px; border: 2px solid black; background-color:#4B7A78;">
+    <h1>Welkom bij de BINGO!!!</h1>
+    <p style="font-family: 'Helvetica'; font-size: 12px;"><i>Links liggen jullie bingokaarten en rechts kun je beginnen met de bingo. Veel plezier!</p>
+  <div class="row"
+  <div style="text-align:center; margin: 25px; border: 2px solid black; background-color:#4B7A78;" class="column">
+    <h2> Bingokaart 1</h2>
+    <img src="/images/bingo1.jpg" width="80%">
+    <br />
+    <h2> Bingokaart 2</h2>
+    <img src="/images/bingo2.jpg" width="80%">
+    <br /> 
+  </div>
+  <div style="text-align:center; margin: 25px; border: 2px solid black; background-color:#4B7A78;" class="column">
+    <h2> Klik op de knop hieronder om de bingo te starten</h2>
+    <button onclick="playAudio('/images/bingo.mp3')" class="woop" type="button">START</button>
+    <br />
+    <br /> 
+    <p><i> Klik hieronder op de knop om alle uiteindelijke gekozen bingoballen te zien. <u>Maar doe dit alleen als u er uitkomt!</u></p>
+    <button class="woop" onclick="unhide()">Toon de ballenbak</button>
+           <div class="exp">
+    <img src="/images/ballenbak.jpg" width="80%">
+             </div>
+  </div>
+  </div>
+            
+     </body>
+</html>

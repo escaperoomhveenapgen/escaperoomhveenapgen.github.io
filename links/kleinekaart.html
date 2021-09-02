@@ -1,0 +1,50 @@
+
+<!DOCTYPE html> 
+   <html> 
+      
+        <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Kaart</title>
+         <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+    <script>
+     function Validate() {
+ 
+ var passcode = prompt("weet je zeker dat hier de schat ligt? Welk figuur heeft je naar deze plek geleid?", "");
+ 
+ if (passcode =="pijl" || passcode =="PIJL" || passcode =="Pijl" ) { 
+   alert("Het figuur klopt, maar jullie zitten niet op de goede locatie. Kijk nog eens goed naar de aanwijzingen en waar de pijl naar toe wijst!!");
+  return true;
+ }
+ alert('Kijk goed naar de hint rechts van de kaart. Welk figuur hebben jullie verkregen?'); return false;
+} 
+      
+     function Validate2() {
+ 
+ var passcode = prompt("weet je zeker dat hier de schat ligt? Welk figuur heeft je naar deze plek geleid?", "");
+ 
+ if (passcode =="PIJL" || passcode =="pijl" || passcode =="Pijl") { 
+   alert("Het figuur klopt, en jullie hebben ook de juiste locatie te pakken! Jullie worden nu naar de tuin geleid, dus onthoud goed waar de schat moet liggen!");
+   window.location="https://escaperoomhveenapgen.github.io/links/tuin1.html";
+  return true;
+ }
+ alert('Kijk goed naar de hint rechts van de kaart. Welk figuur hebben jullie verkregen?'); return false;
+}      
+      
+          </script>
+     </head>
+     
+     <body>
+       <div class="image">
+         <img src="/images/kleinekaart.jpg" width="100%" alt="Kaart">
+         <a onclick="return Validate();" style="top: %; left: %; width: %; height: %;"></a>
+                  <a onclick="return Validate();" style="top: %; left: %; width: %; height: %;"></a>
+         <a onclick="return Validate();" style="top: %; left: %; width: %; height: %;"></a>
+         <a onclick="return Validate();" style="top: %; left: %; width: %; height: %;"></a>
+         <a onclick="return Validate();" style="top: %; left: %; width: %; height: %;"></a>
+         <a href="/images/legendakaart.jpg" target="_blank" style="top: %; left: %; width: %; height: %;"></a>
+
+       </div>
+     </body>
+</html>
+
+          

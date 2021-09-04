@@ -3,6 +3,61 @@
 <head>
  <title>Leestafel</title>
  <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+ 
+  <style>
+              .exp{visibility: hidden;}
+              		   .exp1{visibility: hidden;}
+   .exp2{visibility: hidden;}
+   .exp3{visibility: hidden;}
+   
+              .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+           </style>
+ 
+ <script>
+  function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+  
+  function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+  
+  function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+  
+  function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+ </script>
+ 
+ 
   </head>
   
      <body>
@@ -16,5 +71,39 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/leestafel.html'" type="button" class="woop">
          Terug naar de leestafel</button>
         </div>
+      <br>
+      <div class="row">
+        <div class="column" style="text-align:center">
+           <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Begin met het ontcijferen van het bericht in de Nijsbrief</p>
+             </div>
+               
+                <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">De folders in het magazinerechts aan de rechterkant van de leestafel heb je nodig om de telefoon te kunnen ontgrendelen.</p>
+             </div>
+         
+           <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">De folders in het magazinerechts aan de rechterkant van de leestafel heb je nodig om de telefoon te kunnen ontgrendelen.</p>
+             </div>
+           
+          <button class="woop" onclick="unhide1()">Hint 3</button>
+           <div class="exp2">
+    <p class="and">Om de telefoon te openen moet je slepen van het ene puntje naar het andere, net als bij een echte telefoon.</p>
+             </div>
+           
+           
+         </div>
+           
+           
+            <div class="column" style="text-align:center">
+           <button class="woop" onclick="unhide3()">Uitkomst</button>
+           <div class="exp3">
+    <p class="and">Als het echt niet lukt, is hier de uitkomst voor het ontgrendelen van de telefoon.</p>
+            <img src="/images/uitkomstontgrendeling.jpg" width="30%">
+             </div>
+         
   </body>
 </html>

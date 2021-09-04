@@ -13,7 +13,8 @@
            .exp3{visibility: hidden;}
               .exp4{visibility: hidden;}
               .exp5{visibility: hidden;}
-		   
+		                 .exp6{visibility: hidden;}
+
               .column {
   float: left;
   width: 50%;
@@ -83,6 +84,13 @@ function ValidatePassword() {
 		   
 		   function unhide5() {
     var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		    function unhide6() {
+    var hid = document.getElementsByClassName("exp6");
     // Emulates jQuery $(element).is(':hidden');
     if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";

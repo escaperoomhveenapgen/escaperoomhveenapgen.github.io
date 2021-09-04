@@ -6,6 +6,10 @@
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
           
           <style>
+             
+                .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+             
             .invoer{
               position:absolute;
               z-index:1;
@@ -27,6 +31,23 @@
    return false;
    }
  </script>
+           <script>
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+           </script>
           
      </head>
      <body>
@@ -45,7 +66,21 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/balkon.html'" type="button" class="woop">
          Terug naar het balkon</button>
         </div>
-     
+     <br>
+        <div style="text-align:center">
+              <button class="woop" onclick="unhide();">Hint</button>
+           <div class="exp">
+    <p class="and"> Deze hint geeft 1 onderdeel aan van het zoekplaatje</p>
+              <img src="/images/Hintopdrachtbalkon3.jpg" width="40%" alt="oplossing">
+             </div>
+                   <br>  
+           
+           <button class="woop" onclick="unhide1();">Uitkomst</button>
+           <div class="exp1">
+              <p class="and">Als je de code achter elkaar neer zet krijg je <b>1</b> pinguin, <b>7</b> lieveheersbeestjes en <b>8</b> klavertjes.</p>
+              <img src="/images/balkonoplossing3.jpg" width="40%" alt="oplossing">
+             </div>
+        </div>
      </body>
 </html>
   

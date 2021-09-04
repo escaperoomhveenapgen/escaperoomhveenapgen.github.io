@@ -9,6 +9,8 @@
               		   .exp1{visibility: hidden;}
    .exp2{visibility: hidden;}
    .exp3{visibility: hidden;}
+      .exp4{visibility: hidden;}
+
    
               .column {
   float: left;
@@ -55,6 +57,14 @@
         hid[0].style.visibility = "visible";
     }
 }  
+  
+  function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
  </script>
  
  
@@ -84,13 +94,13 @@
     <p class="and">De folders in het magazinerechts aan de rechterkant van de leestafel heb je nodig om de telefoon te kunnen ontgrendelen.</p>
              </div>
          
-           <button class="woop" onclick="unhide1()">Hint 2</button>
-           <div class="exp1">
+           <button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
     <p class="and">De folders in het magazinerechts aan de rechterkant van de leestafel heb je nodig om de telefoon te kunnen ontgrendelen.</p>
              </div>
            
-          <button class="woop" onclick="unhide1()">Hint 3</button>
-           <div class="exp2">
+          <button class="woop" onclick="unhide3()">Hint 4</button>
+           <div class="exp3">
     <p class="and">Om de telefoon te openen moet je slepen van het ene puntje naar het andere, net als bij een echte telefoon.</p>
              </div>
            
@@ -99,8 +109,8 @@
            
            
             <div class="column" style="text-align:center">
-           <button class="woop" onclick="unhide3()">Uitkomst</button>
-           <div class="exp3">
+           <button class="woop" onclick="unhide4()">Uitkomst</button>
+           <div class="exp4">
     <p class="and">Als het echt niet lukt, is hier de uitkomst voor het ontgrendelen van de telefoon.</p>
             <img src="/images/uitkomstontgrendeling.jpg" width="30%">
              </div>

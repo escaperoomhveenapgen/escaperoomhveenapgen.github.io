@@ -11,7 +11,8 @@
               .exp2{visibility: hidden;}
            .exp3{visibility: hidden;}
               .exp4{visibility: hidden;}
-              
+              .exp5{visibility: hidden;}
+		   
               .column {
   float: left;
   width: 50%;
@@ -78,6 +79,14 @@ function ValidatePassword() {
         hid[0].style.visibility = "visible";
     }
 }  
+		   
+		   function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
 		</script>
            
            
@@ -114,7 +123,13 @@ function ValidatePassword() {
     <p class="and"> 3x betekent dat de bijbehorende letter 3x nodig is. </p>
              </div>
            
-           <button class="woop" onclick="unhide3()">Hint 4</button>
+		<button class="woop" onclick="unhide5()">Hint 4</button>
+           <div class="exp5">
+    <p class="and"> De achtergrond van het opdrachtpapier heeft te maken met de uitkomst.</p>
+              <a href="https://escaperoomhveenapgen.github.io/links/allehintsehbo.html" target="_blank">Klik hier</a>
+             </div>
+		
+           <button class="woop" onclick="unhide3()">Hint 5</button>
            <div class="exp3">
     <p class="and"> Klik op de link om te zien welk gereedschap nodig is om de puzzel op te lossen</p>
               <a href="https://escaperoomhveenapgen.github.io/links/allehintsehbo.html" target="_blank">Klik hier</a>

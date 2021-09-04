@@ -10,7 +10,10 @@
                <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
 
            <style>
-                        
+                 
+		          .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+		   
            	img{
 			position:absolute;
 			z-index:0;
@@ -54,6 +57,27 @@
    return false;
    }
  </script>
+		
+		<script>
+		function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  	
+		</script>
+		
+		
+		
      </head>
      
               <body >
@@ -83,7 +107,21 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/looppad.html'" type="button" class="woop">
          Terug naar de grote zaal</button>
         </div>
-                
+                 <br>
+        <div style="text-align:center">
+              <button class="woop" onclick="unhide();">Hint</button>
+           <div class="exp">
+    <p class="and"> Deze hint laat zien hoe de randjes van de puzzel eruit zien.</p>
+              <img src="/images/hintpcpuzzel.jpg" width="40%" alt="oplossing">
+             </div>
+                   <br>  
+           
+           <button class="woop" onclick="unhide1();">Uitkomst</button>
+           <div class="exp1">
+    <p class="and">Deze afbeelding laat zien welke code in de legpuzzel verborgen zit, namelijk <b>7025</b>.</p>
+              <img src="/images/pcpuzzeloplossing.jpg" width="40%" alt="oplossing">
+             </div>
+        </div>
                 
                  
      </body>

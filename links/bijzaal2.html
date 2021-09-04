@@ -12,6 +12,7 @@
               .exp2{visibility: hidden;}
                .exp3{visibility: hidden;}
               .exp4{visibility: hidden;}
+              .exp5{visibility: hidden;}
            </style>
            
            <script>
@@ -54,6 +55,14 @@
         hid[0].style.visibility = "visible";
     }
 }
+              
+               function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}
            </script>
            
      </head>
@@ -79,7 +88,8 @@
                  <div style="text-align:center">
                <button class="woop" onclick="unhide()">Hint 1</button>
            <div class="exp">
-    <p class="and">De puzzel is verdeeld in vijf delen. De uitkomst kan ingevuld worden op het bord in de andere bijzaal</p>
+    <p class="and">De puzzel is verdeeld in vijf delen. De uitkomst kan ingevuld worden op het bord in de andere bijzaal.</p>
+              <p class="and"> De andere bijzaal kan je in door op de deur te klikken</p>
               <a href="https://escaperoomhveenapgen.github.io/links/opdrachtbord.html" target="_blank">Vul hier de uitkomst in</a>
              </div>  
                     

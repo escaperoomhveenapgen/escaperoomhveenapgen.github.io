@@ -5,7 +5,40 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Grote zaal</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
-     </head>
+     
+      <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+                            .exp2{visibility: hidden;}
+
+           </style>
+           
+           <script> 
+  function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+                 function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              </script>
+      </head>
      
               <body>
        <div class="image">
@@ -19,8 +52,26 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/gang4.html'" type="button" class="woop">
          Terug naar de gang</button>
         </div>
-                
-                
                  
+                <br>
+                 <div style="text-align:center">
+            <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Ga eens kijken op de verhoging of je daar iets kan vinden.</p>
+             </div>
+                
+                 <br>
+            <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">Achterin de zaal is ook nog genoeg te ontdekken</p>
+             </div>
+                <br>
+                  
+            <button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
+    <p class="and">Er zijn drie punten waarop je een puzzel moet maken of een code moet invullen. Klik hieronder om de locaties te zien.</p>
+                          <a href="https://escaperoomhveenapgen.github.io/links/grotezaallocatie.html" target="_blank">Klik hier</a>
+             </div>
+                       </div>
      </body>
 </html>

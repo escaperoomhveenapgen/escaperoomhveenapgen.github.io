@@ -6,6 +6,10 @@
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
           
           <style>
+             <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+             
             .invoer{
               position:absolute;
               z-index:1;
@@ -25,6 +29,22 @@
    alert("Dit klopt niet");
    return false;
    }
+              
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
  </script>
           
      </head>
@@ -45,5 +65,20 @@
          Terug naar het balkon</button>
         </div>
      
+        
+            <div style="text-align:center">
+              <button class="woop" onclick="unhide()">Hint</button>
+           <div class="exp">
+    <p class="and">Deze hint geeft aan welke woorden de plaatjes betekenen</p>
+              <img src="/images/Hintopdrachtbalkon2.jpg" width="40%" alt="Hint">
+             </div>
+                     
+           
+           <button class="woop" onclick="unhide1()">Uitkomst</button>
+           <div class="exp1">
+    <p class="and">Als de rebus opgelost is, krijg je een vraag, zoals hieronder weergegeven. Het antwoord hiervan is <b>Heerenveen</b></p>
+              <img src="/images/balkonoplossing2.jpg" width="40%" alt="oplossing">
+             </div>
+        </div>
      </body>
 </html>

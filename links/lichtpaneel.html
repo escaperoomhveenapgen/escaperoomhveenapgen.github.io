@@ -5,7 +5,92 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Lichtpaneel</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
-     </head>
+    
+      <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+           .exp3{visibility: hidden;}
+              .exp4{visibility: hidden;}
+              .exp5{visibility: hidden;}
+		   
+              .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+           </style>
+           
+           <script>
+		
+function ValidatePassword() {
+
+  var password = prompt("Wat is de code voor het openen van de deur?", "");
+
+  if (password == "kerstsfeer"|| password == "Kerstsfeer" || password =="KERSTSFEER") {
+        window.location ="https://escaperoomhveenapgen.github.io/links/bijzaal2.html";
+     return true;
+  }
+  alert('Dit is fout, kijk nog eens goed naar het lijstje en de volgorde van de letters.');return false;
+}
+
+		   
+			function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		   
+		   function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		</script>
+      
+      </head>
      
               <body>
        <div class="image" style="text-align:center">
@@ -23,8 +108,51 @@
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/grotedeur.html'" type="button" class="woop">
          Terug</button>
         </div>
-                
-                
+                <br>
+                <div class="row">
+        <div class="column" style="text-align:center">
+           <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Het ontcijferen van de opdracht kan door middel van 3 verschillende hints. </p>
+             </div>
+           
+           
+           <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">Het eerste woord kan ontcijferd worden met de ronde schijf in de bijbel op de verhoging</p>
+             </div>
+           
+         
+           <button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
+    <p class="and">Het tweede woord kan ontcijferd worden met de tekens in de buurt van de trap op de muur. </p>
+             </div>
+           
+           <button class="woop" onclick="unhide3()">Hint 4</button>
+           <div class="exp3">
+    <p class="and">Het derde woord kan ontcijferd worden met het briefje bij de verhoging, linksonder. </p>
+             </div>
+           
+                   </div>
+                   <div class="column" style="text-align:center">
+           <button class="woop" onclick="unhide4()">Uitkomst woord 1</button>
+           <div class="exp4">
+    <img src="/images/uitkomstlichtpaneel1.jpg" width="70%">
+                      </div>
+                      
+                    <button class="woop" onclick="unhide5()">Uitkomst woord 2</button>
+           <div class="exp5">
+    <img src="/images/uitkomstlichtpaneel2.jpg" width="70%">
+                      </div>  
+                      
+                      <button class="woop" onclick="unhide6()">Uitkomst woord 3</button>
+           <div class="exp6">
+    <img src="/images/uitkomstlichtpaneel3.jpg" width="70%">
+                      </div>
+                      
+                   </div>
+             </div>
+           
                  
      </body>
 </html>

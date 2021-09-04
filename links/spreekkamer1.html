@@ -4,7 +4,27 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Spreekkamer</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
-          
+           <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+           .exp3{visibility: hidden;}
+              .exp4{visibility: hidden;}
+              .exp5{visibility: hidden;}
+		   
+              .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+           </style>
+           
            <script type="text/javascript">
 function ValidatePassword() {
 
@@ -16,6 +36,55 @@ function ValidatePassword() {
   }
   alert('Nee, dit klopt niet');return false;
 }
+              
+              
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		   
+		   function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
  </script>
            
      </head>
@@ -35,6 +104,34 @@ function ValidatePassword() {
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/gang4.html'" type="button" class="woop">
          Terug naar de gang</button>
         </div>
+        
+        <div class="row">
+        <div class="column" style="text-align:center">
+           <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Kijk aan de rechterkant van de ruimte in één van de kastjes voor de puzzel.</p>
+             </div>
+           
+           <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">De puzzel gaat over Pasen en Pinksteren. In een ander kastje ligt een papiertje met mogelijke hints.</p>
+           </div>
+           
+           <button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
+    <p class="and">Na het oplossen van de puzzel moet je naar de linkerkant van de ruimte en ergens op drukken.</p>
+           </div>
+           
+           </div>
+              
+                   <div class="column" style="text-align:center">
+              <button class="woop" onclick="unhide3()">Uitkomst</button>
+           <div class="exp3">
+    <p class="and">Klik hieronder om de uitkomsten per vraag van de kruiswoordpuzzel te krijgen. </p>
+              <a href="https://escaperoomhveenapgen.github.io/links/uitkomstenspreekkamer.html" target="_blank">Klik hier</a>
+             </div>
+             </div>
+           
      </body>
 </html>
        

@@ -31,6 +31,7 @@
               .exp2{visibility: hidden;}
            .exp3{visibility: hidden;}
 		  .exp4{visibility: hidden;}
+		  .exp5{visibility: hidden;}
 		  
 		  .column {
   float: left;
@@ -119,11 +120,21 @@
 		      </div>
 	     </div>
 	     
+	     <div style="text-align: center; margin: 25px; border: 2px solid black;background-color:#e4ddf4;">
+		     
+	     <button class="woop" onclick="unhide5()">Uitkomst</button>
+           <div class="exp5">
+    <p class="and">De drie cijfergroepen die je krijgt zijn: 29 21 07</p>
+		   <p> Deze kunnen ingevuld worden in de volgorde waarin je het wil. </p>
+		   </di>
+			
+             </div> 
+	     
        <script>
         function checkPassword() {
    var password = document.getElementById("passwordBox");
    var passwordText = password.value;
-   if(passwordText == "290721" || passwordText == "072921" || passwordText == "292107"|| passwordText =="072129" || passwordText == "210729" || passwordText =="212907") {
+   if(passwordText == "290721" || passwordText == "072921" || passwordText == "292107"|| passwordText =="072129" || passwordText == "210729" || passwordText =="212907" || passwordText =="21 29 07" || passwordText == "21 07 29" || passwordText =="07 21 29" || passwordText == "29 21 07" || passwordText == "07 29 21" || passwordText == "29 07 21") {
     return true;
    }
    alert("Dit klopt niet, kijk eens goed naar de cijfers rechtsonder op de drie verkregen delen");
@@ -164,6 +175,14 @@
 	       
 	       function unhide4() {
     var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+	       
+	           function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
     // Emulates jQuery $(element).is(':hidden');
     if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
         hid[0].style.visibility = "visible";

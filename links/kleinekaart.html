@@ -6,6 +6,25 @@
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Kaart</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
+           
+           <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+            .exp2{visibility: hidden;}
+		  
+		  .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+           </style>
+           
     <script>
      function Validate() {
  
@@ -29,6 +48,28 @@
  }
  alert('Kijk goed naar de hint rechts van de kaart. Welk figuur hebben jullie verkregen?'); return false;
 }      
+       
+       	function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+                 
+}  function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
       
           </script>
      </head>
@@ -44,6 +85,31 @@
          <a href="/images/legendakaart.jpg" target="_blank" style="top: 0%; left: 73.6%; width: 26.4%; height: 100%;"></a>
 
        </div>
+        
+        <div class="row>
+                    <div class="column" style="text-align:center">
+                                                                 <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Rechts staat een kaart met symbolen. Als er een pijl van de ene naar het andere symbool staat, betekent dit dat je er een lijn tussen moet trekken.</p>
+                  <p class="and"> Als je het uitgeprinte kaartje hebt, kun je dit makkelijk hierop tekenen. Probeer ander de tekens ongeveer over te tekenen op een vel papier.</p>
+                                <p class="and"> Afdrukken kan door rechtermuisklik op het plaatje en dan afdrukken, of gebruik CTRL + P</p>
+             </div>
+        
+                                              <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+                           <p class="and">De afbeelding hieronder laat zien waar de eerste twee lijnen komen</p>
+                                         <img src="/images/hintkleinekaart.jpg" width="70%">
+                  </div>
+                                                                                           </div>
+                              <div class="column" style="text-align:center">                                                             
+                                         <button class="woop" onclick="unhide2()">Uitkomst</button>
+           <div class="exp2">
+                           <p class="and">De afbeelding hieronder laat de uitkomst zien.</p>
+                                         <img src="/images/oplossingkleinekaart.jpg" width="70%">
+                  </div>                                                  
+             </div>
+                                                                                                </div>
+                                              
      </body>
 </html>
 

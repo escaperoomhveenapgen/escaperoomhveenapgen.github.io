@@ -6,7 +6,12 @@
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
           <style>
             .exp{visibility: hidden;}
-            
+            .exp1{visibility: hidden;}
+             .exp2{visibility: hidden;}
+             .exp3{visibility: hidden;}
+             .exp4{visibility: hidden;}
+             .exp5{visibility: hidden;}
+             
             .column {
   float: left;
   width: 48.7%;
@@ -43,6 +48,43 @@
   new Audio(url).play();
 }
             
+             function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+} 
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+} 
+            function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+             function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+} 
+             
+             function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+} 
+             
           </script> 
      </head>
      
@@ -79,6 +121,7 @@
  </video>
     <br />
     <br /> 
+     <br />
     <p><i> Klik hieronder op de knop om alle uiteindelijke gekozen bingoballen te zien. <u>Maar doe dit alleen als u er niet uitkomt!</u></p>
     <button class="woop" onclick="unhide()">Toon de ballenbak</button>
        <br />
@@ -87,6 +130,52 @@
              </div>
   </div>
   </div>
+   
+   <div style="text-align:center; margin: 5px; border: 2px solid black; background-color:#4B7A78;">
+           <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/gang.html'" type="button" class="woop">
+         Terug naar de gang</button>
+        </div>
             
+   <div class="row" style="text-align:center; margin: 5px; border: 2px solid black; background-color:#4B7A78;" >
+      <div class="column">
+           
+           <button class="woop" onclick="unhide1()">Hint 1</button>
+       <br />
+           <div class="exp1">
+    <p class="and"> Begin met het afspelen van de video om de bingo te starten. Als u geen uitgeprinte bingokaarten heeft, probeer deze dan uit te printen door op de afbeelding te drukken en dan CTRL + P </p>
+              <p class ="and"> Omcirkel of streep de cijfers door die zijn te zien/ te horen in het filmpje. Als het niet lukt, kan je de ballenbak openen en alle genoemde nummers terug zien.</p>
+             </div>
+   <br>        
+     <button class="woop" onclick="unhide2()">Hint 2</button>
+       <br />
+           <div class="exp2">
+              <p>Als de bingo is gespeeld, kun je de kaart openen en de oplossing invullen/opzoeken op de kaart!</p>
+   </div>
+   
+     <button class="woop" onclick="unhide3()">Hint 3</button>
+       <br />
+           <div class="exp3">
+              <p class="and"> Hieronder zie je de eerste 5 cijfers ingevuld op de bingokaarten.</p>
+              <img src="/images/bingo5.jpg" width="70%" alt="Bingo">
+         </div>
+      </div>
+      
+       <div class="column">
+          <button class="woop" onclick="unhide4()">Uitkomst Bingo</button>
+       <br />
+           <div class="exp4">
+              <p class="and"> Hieronder zie je de ingevulde bingokaarten</p>
+              <img src="/images/bingoingevuld.jpg" width="70%" alt="Bingo">
+         </div>
+          
+          <button class="woop" onclick="unhide5()">Uitkomst kaart</button>
+       <br />
+           <div class="exp5">
+              <p class="and"> De uitkomst van de bingokaarten geeft <b>G6</b>. Klik de G6 locatie aan op de kaart en vul dan ook G6 in. Je wordt dan doorgestuurd.</p>
+         </div>
+         
+      </div>
+   </div>
+           
      </body>
 </html>

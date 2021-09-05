@@ -6,6 +6,27 @@
           <title>Tuin</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
            
+           <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+           .exp3{visibility: hidden;}
+              .exp4{visibility: hidden;}
+              .exp5{visibility: hidden;}
+		   
+              .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+           </style>
+           
            <script type="text/javascript">
 function Validate() {
  
@@ -30,9 +51,70 @@ function Validate() {
  }
  alert('Nee, zijn jullie al binnen geweest?'); return false;
 }  
-             
+              
+      function Validate3() {
+ 
+ var passcode = prompt("Door welk figuur zijn jullie hier gekomen?", "");
+ 
+ if (passcode =="Pijl" || passcode =="PIJL" || passcode =="pijl" ) { 
+   alert("Dit klopt! Je kan weer even terug naar de kaart om te kijken waar de schat ligt"); 
+    window.location="https://escaperoomhveenapgen.github.io/links/kleinekaart.html";
+  return true;
+ }
+ alert('Nee, zijn jullie al binnen geweest?'); return false;
+}        
              
 </script>
+           
+           <script>
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		   
+		   function unhide5() {
+    var hid = document.getElementsByClassName("exp5");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+		</script>
      </head>
      
               <body>
@@ -43,11 +125,62 @@ function Validate() {
                    <a onclick="return Validate();" href="https://escaperoomhveenapgen.github.io/links/tuin5.html" style="top: 46.8%; left: 0%; width: 10.6%; height: 12.3%;" ></a>
 <a href="javascript: alert('Dit is de brievenbus')" style="top: 46.3%; left: 15.3%; width: 3.9%; height: 9.1%;"></a>
           <a href="javascript: alert('Gaan jullie altijd via ramen een gebouw binnen?')" style="top: 33.9%; left: 56.4%; width: 26.4%; height: 24.4%;"></a>
-          <a href="javascript: alert('Gaan jullie altijd via ramen een gebouw binnen?')" style="top: 35.5%; left: 27.5%; width: 9.7%; height: 23.7%;"></a>
-
-
-                                                            
+          <a href="javascript: alert('Gaan jullie altijd via ramen een gebouw binnen?')" style="top: 35.5%; left: 27.5%; width: 9.7%; height: 23.7%;"></a>                                      
 
                 </div>
+                 
+                 <div style="text-align:center;">
+           <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/deel2.html'" type="button" class="woop">
+         Terug naar de blog</button>
+        </div>
+                 <br>
+                   <div style="text-align:center;">
+           <button onclick="return Validate3();" href="https://escaperoomhveenapgen.github.io/links/kleinekaart.html" type="button" class="woop">
+         Terug naar de kaart</button>
+        </div>
+                 <br>
+                 
+                 <div class="row" style="text-align:center;">
+                    <div class="column" style="text-align:center;">
+                       
+                       <button class="woop" onclick="unhide()">Hint 1 (Begin)</button>
+           <div class="exp">
+    <p class="and">Misschien moeten jullie proberen het gebouw binnen te gaan!</p>
+             </div>
+                       <br>
+                    <button class="woop" onclick="unhide1()">Hint 2 (Eind)</button>
+           <div class="exp1">
+    <p class="and">Als jullie kijken naar de kaart, waar ligt de schat ongeveer?</p>
+             </div>   
+                       
+                 <br>
+                       
+                       <button class="woop" onclick="unhide2()">Hint 3 (Eind)</button>
+           <div class="exp2">
+    <p class="and">Ga 4x naar links in de tuin. Vanaf daar is het zoeken naar de juiste plek! </p>
+             </div>
+                    </div>
+                    
+                    <div class="column" style="text-align:center;">
+                       
+                       <button class="woop" onclick="unhide3()">Uitkomst (Begin)</button>
+           <div class="exp3">
+    <p class="and">Klik op de deur!</p>
+             </div>
+                       <br>
+                       
+                       <div class="column" style="text-align:center;">
+                       
+                       <button class="woop" onclick="unhide4()">Uitkomst (Einde)</button>
+           <div class="exp4">
+    <p class="and">Volg de link onder deze afbeelding en klik op de goede plek, zoals aangegeven op de afbeelding!</p>
+              <img src="/images/oplossingtuin.html" width="70%" alt="oplossing">
+                                        <a href="https://escaperoomhveenapgen.github.io/links/tuin8.html" target="_blank">Naar de goede plek!</a>
+             </div>
+                       </div>
+                    </div>
+                          
+                          
+                      
      </body>
 </html> 

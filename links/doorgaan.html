@@ -25,7 +25,25 @@
 				   border-radius: 4px;
 			    height:5%;
 		    }
-            
+		  
+            .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+           .exp3{visibility: hidden;}
+		  .exp4{visibility: hidden;}
+		  
+		  .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+		  
           </style>
      </head>
      
@@ -63,6 +81,44 @@
         </div>
 																   </div>
        
+	      <div style="text-align: center; top: 50%; margin: 25px; border: 2px solid black;background-color:#e4ddf4;" class="row">
+		      <div class="column" style="text-align:center">
+			      
+			      <button class="woop" onclick="unhide()">Hint 1</button>
+           <div class="exp">
+    <p class="and">Er zijn in totaal 3 groepen met 2 cijfers, gecombineerd wordt het dus een 6-cijferige code.</p>
+             </div>
+			      
+			      <button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and">De link hieronder laat zien waar de drie puzzels zijn die je nodig hebt om de codes te verkrijgen.</p>
+		   <a href="https://escaperoomhveenapgen.github.io/links/grotezaallocatie.html" target="_blank">Klik hier </a>
+             </div>
+		      </div>
+		      <div class="column" style="text-align:center">
+			    <button class="woop" onclick="unhide2()">Uitkomst voor de puzzel op het balkon</button>
+           <div class="exp2">
+    <p class="and">Er zijn drie onderdelen in deze puzzel, wat uiteindelijk leidt tot het verkrijgen van een afbeelding.</p>
+			<a href="https://escaperoomhveenapgen.github.io/links/puzzelbalkonoplossing.html" target="_blank">Klik hier voor de oplossing </a>
+             </div>  
+			 
+			      <button class="woop" onclick="unhide3()">Uitkomst voor de puzzel op de PC</button>
+           <div class="exp3">
+    <p class="and">De puzzel is een legpuzzel, wat uiteindelijk leidt tot het verkrijgen van een afbeelding</p>
+			<a href="https://escaperoomhveenapgen.github.io/links/puzzelpcoplossing.html" target="_blank">Klik hier voor de oplossing </a>
+             </div>  
+			      
+			       <button class="woop" onclick="unhide4()">Uitkomst voor de puzzel op het lichtpaneel</button>
+           <div class="exp4">
+    <p class="and">De puzzel bestaat uit drie verschillende geheimschriften. Het invoeren van de oplossingen leidt tot het verkrijgen van een afbeelding</p>
+			<a href="https://escaperoomhveenapgen.github.io/links/puzzellichtpaneeloplossing.html" target="_blank">Klik hier voor de oplossing </a>
+             </div>  
+			      
+			      
+			      
+		      </div>
+	     </div>
+	     
        <script>
         function checkPassword() {
    var password = document.getElementById("passwordBox");
@@ -73,6 +129,46 @@
    alert("Dit klopt niet, kijk eens goed naar de cijfers rechtsonder op de drie verkregen delen");
    return false;
    }
+	       
+	       		function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+	       
+	       function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
        </script>
      </body>
 </html>

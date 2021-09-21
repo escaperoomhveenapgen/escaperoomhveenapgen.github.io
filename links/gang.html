@@ -116,6 +116,20 @@ function ValidatePassword2() {
 } 
  
 </script>
+		
+		<script type="text/javascript">
+function ValidatePassword3() {
+ 
+ var password3 = prompt("Weten jullie zeker dat jullie er niet uitkomen? Vraag om de juiste code! ", "");
+ 
+ if (password3 =="0510") { 
+   return true;
+ }
+ alert('Vraag om de juiste code!'); return false;
+} 
+ 
+</script>
+		
            				
 		    <script>
          function unhide() {
@@ -276,7 +290,7 @@ function ValidatePassword2() {
   <div class="column" style="text-align:center">
      <p> Als u er echt niet uitkomt, kunt u hier de uitkomsten vinden</p>
                
-	  <button class="woop" onclick="unhide2()">Uitkomst deur Jongste Jeugd</button>
+	  <button class="woop" onclick="return ValidatePassword3() unhide2()">Uitkomst deur Jongste Jeugd</button>
            <div class="exp2">
     <p class="and">Het telefoonnummer dat gebeld heeft naar de telefoon op de leestafel = +316 19283746, of 0619283746 kan ook ingevoerd worden</p>
              </div>

@@ -6,6 +6,14 @@
           <title>Ingang</title>
          <link rel="stylesheet" type="text/css" href="/css/onderdeel.css">
           
+           <style>
+              .exp{visibility: hidden;}
+              .exp1{visibility: hidden;}
+              .exp2{visibility: hidden;}
+           .exp3{visibility: hidden;}
+              .exp4{visibility: hidden;}
+           </style>
+           
           <script type="text/javascript">
 function ValidatePassword() {
 
@@ -18,6 +26,47 @@ function ValidatePassword() {
   alert('Dit is fout, kijk nog eens goed naar de brief!');return false;
 }
 </script>
+           
+           <script>
+              function unhide() {
+    var hid = document.getElementsByClassName("exp");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide1() {
+    var hid = document.getElementsByClassName("exp1");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              function unhide2() {
+    var hid = document.getElementsByClassName("exp2");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide3() {
+    var hid = document.getElementsByClassName("exp3");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+              
+              function unhide4() {
+    var hid = document.getElementsByClassName("exp4");
+    // Emulates jQuery $(element).is(':hidden');
+    if(hid[0].offsetWidth > 0 && hid[0].offsetHeight > 0) {
+        hid[0].style.visibility = "visible";
+    }
+}  
+           </script>
           
      </head>
      
@@ -28,12 +77,39 @@ function ValidatePassword() {
          <a href="https://escaperoomhveenapgen.github.io/links/nieuwebrief.html" style="top: 27.2%; left: 34.4%; width: 10%; height: 20.4%;" target="_blank"></a>
           <a href="javascript: alert('Regent het buiten?')" style="top: 65.4%; left: 20.3%; width: 9%; height: 34%;"></a>
 
-                                                            
-
-                </div>
+                                                                          </div>
                  
+     
                  <div style="text-align:center">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/tuin4.html'" type="button" class="woop">
          Terug naar buiten</button>
+                 </div>
+                 <br>
+                 
+                 button class="woop" onclick="unhide()">Hint 1 </button>
+           <div class="exp">
+    <p class="and">Om de deur te kunnen openen moeten jullie iets doen met de brieven op de blog</p>
+             </div>
+      
+      button class="woop" onclick="unhide1()">Hint 2</button>
+           <div class="exp1">
+    <p class="and"> I = 20 & B = 13</p>
+             </div>
+
+button class="woop" onclick="unhide2()">Hint 3</button>
+           <div class="exp2">
+    <p class="and">L = 23 & S = 4</p>
+             </div>
+               
+button class="woop" onclick="unhide3()">Hint 4</button>
+           <div class="exp3">
+    <p class="and">E = 16 & O = 26</p>
+             </div>
+
+
+button class="woop" onclick="unhide4()">Hint 5</button>
+           <div class="exp4">
+    <p class="and">Z = 11 & R = 3 </p>
+             </div>
      </body>
 </html> 

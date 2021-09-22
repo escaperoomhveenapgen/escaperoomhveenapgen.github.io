@@ -131,6 +131,48 @@ function ValidatePassword3() {
  
 </script>
 		
+		<script type="text/javascript">
+function ValidatePassword4() {
+ 
+ var password4 = prompt("Weten jullie zeker dat jullie er niet uitkomen? Vraag om de juiste code! ", "");
+ 
+ if (password4 =="0710") { 
+   unhide7();
+	 return true;
+ }
+ alert('Vraag om de juiste code!'); return false;
+} 
+ 
+</script>
+		
+		<script type="text/javascript">
+function ValidatePassword5() {
+ 
+ var password5 = prompt("Weten jullie zeker dat jullie er niet uitkomen? Vraag om de juiste code! ", "");
+ 
+ if (password5 =="1010") { 
+   unhide9();
+	 return true;
+ }
+ alert('Vraag om de juiste code!'); return false;
+} 
+ 
+</script>
+		
+		<script type="text/javascript">
+function ValidatePassword6() {
+ 
+ var password6 = prompt("Weten jullie zeker dat jullie er niet uitkomen? Vraag om de juiste code! ", "");
+ 
+ if (password6 =="2110") { 
+   unhide4();
+	 return true;
+ }
+ alert('Vraag om de juiste code!'); return false;
+} 
+ 
+</script>
+		
            				
 		    <script>
          function unhide() {
@@ -297,17 +339,17 @@ function ValidatePassword3() {
              </div>
 		       
 	 
-	    <button class="woop" onclick="unhide7()">Uitkomst Mededelingenbord</button>
+	    <button class="woop" onclick="return ValidatePassword4()">Uitkomst Mededelingenbord</button>
            <div class="exp7">
 		   <p class="and"> Romte </p>
              </div>
 	  
-	  <button class="woop" onclick="unhide9()">Uitkomst Leestafel</button>
+	  <button class="woop" onclick="return ValidatePassword5()">Uitkomst Leestafel</button>
            <div class="exp9">
 		   <p class="and"> Nijsbrief </p>
              </div>
 	  
-	  <button class="woop" onclick="unhide4()">Uitkomst Tafel</button>
+	  <button class="woop" onclick="return ValidatePassword6()">Uitkomst Tafel</button>
            <div class="exp4">
 		   <p class="and"> De uitkomst van de opdrachten in de grote zaal bestaat uit 3 groepen met 2 cijfers. Voer 290721 in. </p>
              </div>

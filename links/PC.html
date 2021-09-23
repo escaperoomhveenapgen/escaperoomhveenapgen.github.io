@@ -15,28 +15,27 @@
               .exp1{visibility: hidden;}
 		   
            	img{
-			position:absolute;
+			position:relative;
 			z-index:0;
 			left:10%;
 		   }
 		   
 		   .framing{
-			   position:absolute;
+			   position:relative;
 			   z-index:1;
 		   }
 		
 		   
 		    .invoer{
-              position:absolute;
-              z-index:1;
-              top:100%;
-               left:40%;
+              position:relative;
+              z-index:0;
+              
                text-align:center;
                margin-top:25px;
             }
 		   
 		   .knop{
-			   position:absolute;
+			   position:relative;
 			   top:100%;
 			   left:40%;
 			   margin-top:150px;
@@ -103,23 +102,23 @@
 	    <br>
 	    <br> <br>
 	    <br>
-                  <div style="position:absolute; z-index:0;">
+                  <div style="position:relative; z-index:0;">
            <button onclick="location.href='https://escaperoomhveenapgen.github.io/links/looppad.html'" type="button" class="woop" >
          Terug naar de grote zaal</button>
         </div>
                  <br>
-        <div style="text-align:center; position:absolute; top:100%; left:30%; margin-top:230px; margin-bottom: 20px; z-index:0;">
+        <div style="text-align:center; position:relative; top:100%; left:30%; margin-top:230px; margin-bottom: 20px; z-index:0;">
               <button class="woop" onclick="unhide();">Hint</button>
-           <div class="exp" style="text-align:center">
+           <div class="exp" style="text-align:center; position:relative; z-index:0;">
     <p class="and"> Deze hint laat zien hoe de randjes van de puzzel eruit zien.</p>
-              <img src="/images/hintpcpuzzel.jpg" width="40%" alt="oplossing">
+              <img src="/images/hintpcpuzzel.jpg" width="40%" alt="oplossing" style="position:relative; z-index:0;">
              </div>
                   
            
            <button class="woop" onclick="unhide1();">Uitkomst</button>
-           <div class="exp1" style="text-align:center">
+           <div class="exp1" style="text-align:center position:relative; z-index:0;">
     <p class="and">Deze afbeelding laat zien welke code in de legpuzzel verborgen zit, namelijk <b>7025</b>.</p>
-              <img src="/images/pcpuzzeloplossing.jpg" width="40%" alt="oplossing">
+              <img src="/images/pcpuzzeloplossing.jpg" width="40%" alt="oplossing" style="position:relative; z-index:0;">
              </div>
 		<br>
 		<br>
